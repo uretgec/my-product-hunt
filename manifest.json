@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "My Product Hunt",
+    "short_name": "My PH",
+    "description": "My some basic changes made on Product Hunt",
+    "version": "1.0",
+    "permissions": [
+        "tabs"
+    ],
+    "host_permissions": [ 
+        "https://www.producthunt.com/*"
+    ],
+    "action": {
+        "default_icon": {              
+            "16": "images/icon16.png",   
+            "24": "images/icon24.png",   
+            "32": "images/icon32.png"    
+          }
+    },
+    "icons": { 
+    },
+    "author": "Uretgec",
+    "offline_enabled": true,
+    "content_scripts": [
+        {
+          "matches": ["*://www.producthunt.com/*"],
+          "css": ["myStyles.css"],
+          "js": ["contentScript.js"],
+          "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+  }
