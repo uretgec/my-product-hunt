@@ -1,4 +1,8 @@
-// DOCS: https://developer.chrome.com/docs/extensions/mv3/messaging/
+/* 
+    DOCS
+    - https://developer.chrome.com/docs/extensions/mv3/messaging/
+    - https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Intercept_HTTP_requests
+*/
 
 // Collect sending IAM_READY action message tabs
 //let iamReadyTabs = [];
@@ -52,3 +56,34 @@ chrome.tabs.onUpdated.addListener(
         }
     }
 );*/
+
+/*
+chrome.webRequest.onBeforeRequest.addListener(
+    function(requestDetail) {
+        if (requestDetail.method === "POST") {
+            console.log("chrome.webRequest.onBeforeRequest", requestDetail);
+        }
+    },
+    { urls: ["https://www.producthunt.com/frontend/graphql"], types: ["xmlhttprequest"] },
+    ["requestBody", "extraHeaders"]
+);
+
+chrome.webRequest.onBeforeSendHeaders.addListener(
+    function(requestDetail) {
+        if (requestDetail.method === "POST") {
+            console.log("chrome.webRequest.onBeforeSendHeaders", requestDetail);
+        }
+    },
+    { urls: ["https://www.producthunt.com/frontend/graphql"], types: ["xmlhttprequest"] },
+    ["requestHeaders", "extraHeaders"]
+);
+
+
+chrome.webRequest.onCompleted.addListener(
+    function(requestDetail) {
+        console.log("chrome.webRequest.onCompleted", requestDetail);
+    },
+    { urls: ["https://www.producthunt.com/frontend/graphql"], types: ["xmlhttprequest"] },
+    ["responseHeaders", "extraHeaders"]
+);
+*/
