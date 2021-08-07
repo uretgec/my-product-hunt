@@ -1,9 +1,73 @@
-/*
-.styles_overlay__2r_YH {
-    display: none;
+/* via: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+.styles_container__4Ydg1 {
+    border-top: 1px solid #e8e8e8;
+    margin: 0 20px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.styles_content__1JfPV {
-    filter: none;
+.styles_rowblock__4Ydg1 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
-*/
+
+.styles_columnblock__4Ydg1 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;    
+}
+
+.styles_rowinlineblock__4Ydg1 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.styles_loadingblock__4Ydg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*PromotedProducts*/
+.styles_link__3mxUn {
+  background-color: #f9f9f9;
+}
+
+/*Socials*/
+.styles_container__14gv3 {
+  padding: 0;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .styles_container__14gv3 {
+    padding: 10px;
+    margin-top: 5px;
+  }
+}
+.styles_icon__3ITVt {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 768px) {
+  .styles_icon__3ITVt {
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+}
+.styles_icon__3ITVt path {
+  fill: #6f6f6f;
+  opacity: 0.8;
+}
+.styles_icon__3ITVt:hover path {
+  fill: #30303f;
+}
