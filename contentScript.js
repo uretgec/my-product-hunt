@@ -33,12 +33,6 @@ browser.runtime.onMessage.addListener(
     }
 );*/
 
-/**
- * daha basit olmalı hemen tek sorguda herşey elimize geçmeli. regexten yararlanılabilir. post-item-1212312 , href içindeki postsgeçen urllerden ilkini bul gibi regex sonuçlarına güvenilebilir. 
- * fetch çağrısı yapıldıktan sonra ilgili bölüm işaretlenmeli ve bir daha fetch çağrısı yapılmamalı
- * fetch yapılması için mouse hareket ederse iptal edilmeli. ya da arka planda işlenmeli ve geri dönülmeli. Doğru yere dönülmeli.
- */
-
 // mouse tracking
 let prevPostItemId = null;
 //let postItemSlugRegex = /\/posts\/\w+/g;
@@ -62,7 +56,7 @@ document.addEventListener("mouseover", function( event ) {
     
     /*let postItemSlug2 = postItemObj.outerHTML.match(postItemSlugRegex);
     if(postItemSlug2.length > 0) {
-        console.log("SLug", postItemSlug2[0]);
+        console.log("Slug", postItemSlug2[0]);
     }*/
 
     let postItemUri = postItemObj.querySelector('a[data-test="post-name-' +currentPostItemId+ '"]');
@@ -187,18 +181,18 @@ document.addEventListener("mouseover", function( event ) {
         extraContent += '<div class="styles_rowblock__4Ydg1">';
 
         // Hunter and Makers
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_hunter__1oa2L styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Hunter</div>'
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Hunter</div>'
         + '<div class="styles_makersContainer__1N77x">'
-        + '<a class="styles_card__lc6A-" href="/@' + product.hunter.username + '" title="' + product.hunter.name + ' - ' + product.hunter.headline.replace('"', "'") + '"><div><div class="styles_container__mO53e" target="_blank"><img src="' + product.hunter.avatarUrl + '" alt="" class="styles_image__2cVru" style="width: 30px; height: 30px;"></div></div></a>' 
+        + '<a href="/@' + product.hunter.username + '" title="' + product.hunter.name + ' - ' + product.hunter.headline.replace('"', "'") + '"><div><div class="styles_container__mO53e" target="_blank"><img src="' + product.hunter.avatarUrl + '" alt="" class="styles_image__2cVru" style="width: 30px; height: 30px;"></div></div></a>' 
         + '</div></div>';
         
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_makers__11RgN styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">' + product.makers.length + ' Makers</div>' 
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">' + product.makers.length + ' Makers</div>' 
         + '<div class="styles_makersContainer__1N77x styles_rowinlineblock__4Ydg1">';
         
         if(product.makers.length > 0) {
             for (let makerid = 0; makerid < product.makers.length; makerid++) {
                 const maker = product.makers[makerid];
-                extraContent += '<a class="styles_card__lc6A-" href="/@' + maker.username + '" title="' + maker.name + ' - ' + maker.headline.replace('"', "'") + '"><div class="styles_container__mO53e"><img src="' + maker.avatarUrl + '" alt="" class="styles_image__2cVru" style="width: 30px; height: 30px;"></div></a>';
+                extraContent += '<a href="/@' + maker.username + '" title="' + maker.name + ' - ' + maker.headline.replace('"', "'") + '"><div class="styles_container__mO53e"><img src="' + maker.avatarUrl + '" alt="" class="styles_image__2cVru" style="width: 30px; height: 30px;"></div></a>';
             }
         }
 
@@ -206,7 +200,7 @@ document.addEventListener("mouseover", function( event ) {
         // Hunter and Makers
 
         // Reviews
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_hunter__1oa2L styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Ratings</div>';
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Ratings</div>';
         extraContent += '<div class="styles_actions__3Sc81">' 
         + '<a class="styles_button__-7l7l styles_smallSize__38yI- styles_subtleVariant__14Msp styles_simpleVariant__1SJ3a styles_button__SCCIK" href="/posts/' + product.meta.slug + '/reviews" target="_blank">' 
         + '<span class="styles_font__2Nqit styles_xSmall__1eYHj styles_semiBold__2IC3i styles_buttonContainer__2c7tT styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">' + product.rating.ratingCount + ' Voters - ' + product.rating.ratingValue + '/5</span>' 
@@ -215,7 +209,7 @@ document.addEventListener("mouseover", function( event ) {
         // Reviews
 
         // Socials
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_hunter__1oa2L styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Social Links</div>';
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Social Links</div>';
         extraContent += '<div class="styles_flex__363IJ styles_flex-align-flex-start__3RSvk styles_flex-direction-column__203zO styles_flex-justify-center__3kSv0 styles_responsive__96EZc">'
         + '<span class="styles_font__2Nqit styles_grey__3J1TQ styles_small__2bw6M styles_normal__iGf4Q styles_container__14gv3 styles_lineHeight__2RYYy styles_underline__20yPd">';
 
@@ -258,7 +252,7 @@ document.addEventListener("mouseover", function( event ) {
         extraContent += '<div class="styles_rowblock__4Ydg1">';
 
         // Headline
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_hunter__1oa2L styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Description</div>';
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Description</div>';
         extraContent += '<div class="styles_font__2Nqit styles_small__2bw6M styles_normal__iGf4Q styles_format__219oD styles_lineHeight__2RYYy styles_underline__20yPd">'
         + product.meta.description
         + '</div></div>';
@@ -268,7 +262,7 @@ document.addEventListener("mouseover", function( event ) {
         extraContent += '<div class="styles_rowblock__4Ydg1">';
 
         // Topics
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_hunter__1oa2L styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Other Topics</div>';
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Other Topics</div>';
         extraContent += '<div class="styles_actions__3Sc81">';
         if(product.topics.length > 1) {
             for (let topicid = 1; topicid < product.topics.length; topicid++) {
@@ -286,7 +280,7 @@ document.addEventListener("mouseover", function( event ) {
         extraContent += '<div class="styles_rowblock__4Ydg1">';
 
         // Bookmarks
-        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q styles_hunter__1oa2L styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Bookmarks</div>';
+        extraContent += '<div class="styles_columnblock__4Ydg1"><div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">Bookmarks</div>';
         extraContent += '<div class="styles_actions__3Sc81">';
         if(product.bookmarks.length > 0) {
             for (let bookmarkid = 0; bookmarkid < product.bookmarks.length; bookmarkid++) {
