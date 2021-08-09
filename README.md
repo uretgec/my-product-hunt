@@ -1,7 +1,9 @@
 # My Product Hunt Browser Extension
 Some basic personal changes made on Product Hunt website
 
-## FEATURE
+![screenshot](https://raw.githubusercontent.com/uretgec/my-product-hunt/develop/screenshots/my-product-hunt-more-data.png)
+
+## Feature
 - Removes blur effect background with sign up button on today list at homepage
 - Changes "Promoted Products" background color
 - Shows more data of product detail without go to detail page
