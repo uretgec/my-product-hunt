@@ -28,3 +28,7 @@ Some basic personal changes made on Product Hunt website
 
 ## Licence
 See LICENSE for more details.
+
+### TODO
+- Add to chorme store
+- release script added
