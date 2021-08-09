@@ -4,20 +4,17 @@
     "short_name": "My PH",
     "description": "Some basic personal changes made on Product Hunt website",
     "version": "1.0",
+    "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
         "tabs"
     ],
     "host_permissions": [ 
         "https://www.producthunt.com/*"
     ],
-    "action": {
-        "default_icon": {              
-            "16": "images/icon16.png",   
-            "24": "images/icon24.png",   
-            "32": "images/icon32.png"    
-          }
-    },
     "icons": { 
+        "16": "icons/16.png",   
+        "32": "icons/32.png",
+        "128": "icons/128.png" 
     },
     "author": "Uretgec",
     "offline_enabled": false,
