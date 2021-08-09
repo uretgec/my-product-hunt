@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "My Product Hunt",
     "short_name": "My PH",
-    "description": "My some basic changes made on Product Hunt",
+    "description": "Some basic personal changes made on Product Hunt website",
     "version": "1.0",
     "permissions": [
         "tabs"
@@ -20,12 +20,12 @@
     "icons": { 
     },
     "author": "Uretgec",
-    "offline_enabled": true,
+    "offline_enabled": false,
     "content_scripts": [
         {
           "matches": ["*://www.producthunt.com/*"],
           "css": ["myStyles.css"],
-          "js": ["contentScript.js"],
+          "js": ["lib/producthunt.js","contentScript.js"],
           "run_at": "document_idle"
         }
     ],
