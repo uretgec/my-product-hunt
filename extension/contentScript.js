@@ -1,17 +1,11 @@
 "use strict";
 
-// Web Extension API Compatibility
-window.browser = window.browser || window.chrome;
-
 // Get MyProductHunt with Dombili class
 const myProductHunt = new MyProductHunt();
 
 // listen runtime message from bg
-browser.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         if(request.action === "IM_READY") {
-
             // Remove signup block
             document.querySelectorAll(myProductHunt.SignupBlock).forEach(function(item) {
                 item.remove();
@@ -21,7 +15,6 @@ browser.runtime.onMessage.addListener(
             document.querySelectorAll(myProductHunt.BlurryBlock).forEach(function(item) {
                 item.removeAttribute("class");
             });
-
         }
     }
 );

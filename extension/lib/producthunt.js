@@ -5,7 +5,7 @@ function MyProductHunt() {}
 MyProductHunt.prototype.BaseUri = "https://www.producthunt.com"
 MyProductHunt.prototype.SignupBlock = ".styles_overlay__2r_YH"
 MyProductHunt.prototype.BlurryBlock = ".styles_content__1JfPV"
-MyProductHunt.prototype.ProductPostBlock = "div.styles_item__2kQQ5"
+MyProductHunt.prototype.ProductPostBlock = ".styles_item__2kQQ5"
 MyProductHunt.prototype.ExtraContentClassName = "styles_container__4Ydg1"
 MyProductHunt.prototype.ImgixSuffixQuery = "?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
 
@@ -262,7 +262,7 @@ MyProductHunt.prototype.createTopicsBlock = function (product) {
         + '<div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">'
         + 'Other Topics'
         + '</div>'
-        + '<div class="styles_actions__3Sc81">'
+        + '<div class="styles_actions__3Sc81" style="flex-wrap:wrap">'
     
         if(product.topics.length > 1) {
             for (let topicid = 1; topicid < product.topics.length; topicid++) {
