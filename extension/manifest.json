@@ -6,10 +6,8 @@
     "version": "1.0",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
-        "tabs"
-    ],
-    "host_permissions": [ 
-        "https://www.producthunt.com/*"
+        "activeTab",
+        "webNavigation"
     ],
     "icons": { 
         "16": "icons/16.png",   
