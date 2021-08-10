@@ -13,9 +13,10 @@ Some basic personal changes made on Product Hunt website
 - Firefox (soon)
 
 ## Installation
-
+#
 ### Chrome Store
-(Link Not Ready)
+
+Go to [My Product Hunt](https://chrome.google.com/webstore/detail/jbchipnpikoidnjdgmjdipiandcjhilp) Chrome Store Page
 
 ### Local
 
@@ -31,4 +32,4 @@ See LICENSE for more details.
 
 ### TODO
 - Add to chorme store
-- release script added
+- Add release script

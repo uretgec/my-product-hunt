@@ -5,19 +5,18 @@ const myProductHunt = new MyProductHunt();
 
 // listen runtime message from bg
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-        if(request.action === "IM_READY") {
-            // Remove signup block
-            document.querySelectorAll(myProductHunt.SignupBlock).forEach(function(item) {
-                item.remove();
-            });
+    if(request.action === "IM_READY") {
+        // Remove signup block
+        document.querySelectorAll(myProductHunt.SignupBlock).forEach(function(item) {
+            item.remove();
+        });
 
-            // Remove blur bg
-            document.querySelectorAll(myProductHunt.BlurryBlock).forEach(function(item) {
-                item.removeAttribute("class");
-            });
-        }
+        // Remove blur bg
+        document.querySelectorAll(myProductHunt.BlurryBlock).forEach(function(item) {
+            item.removeAttribute("class");
+        });
     }
-);
+});
 
 // Mouse tracking
 let prevPostItemId = null;
@@ -86,7 +85,7 @@ document.addEventListener("mouseover", function( event ) {
             myProductHunt.createBookmarksBlock(product)
         );
 
-        extraContentContainer.innerHTML = '';
+        extraContentContainer.innerHTML = ''; // Sorry about that
         extraContentContainer.insertAdjacentHTML("beforeend", extraContentBlock);
         postItemObj.append(extraContentContainer);
 
