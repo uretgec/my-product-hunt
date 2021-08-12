@@ -13,7 +13,7 @@ Some basic personal changes made on Product Hunt website
 - Firefox (soon)
 
 ## Installation
-#
+
 ### Chrome Store
 
 Go to [My Product Hunt](https://chrome.google.com/webstore/detail/jbchipnpikoidnjdgmjdipiandcjhilp) Chrome Store Page

@@ -3,10 +3,9 @@
     "name": "My Product Hunt",
     "short_name": "My PH",
     "description": "Some basic personal changes made on Product Hunt website",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
-        "activeTab",
         "webNavigation"
     ],
     "icons": { 
