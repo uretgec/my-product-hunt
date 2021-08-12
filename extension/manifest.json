@@ -6,7 +6,6 @@
     "version": "1.0.2",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
-        "activeTab",
         "webNavigation"
     ],
     "icons": { 
