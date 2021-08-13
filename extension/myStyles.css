@@ -38,36 +38,39 @@
 
 /*PromotedProducts*/
 .styles_link__3mxUn {
-  background-color: #f9f9f9;
+    background-color: #f8f8f8;
+    border-width: 0 0 0 5px;
+    border-color: #f64900;
+    border-style: solid;
 }
 
 /*Socials*/
 .styles_container__14gv3 {
-  padding: 0;
-  margin-top: 10px;
+    padding: 0;
+    margin-top: 10px;
 }
 @media (max-width: 768px) {
-  .styles_container__14gv3 {
-    padding: 10px;
-    margin-top: 5px;
-  }
+    .styles_container__14gv3 {
+        padding: 10px;
+        margin-top: 5px;
+    }
 }
 .styles_icon__3ITVt {
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
 }
 @media (max-width: 768px) {
-  .styles_icon__3ITVt {
-    margin-right: 20px;
-    width: 24px;
-    height: 24px;
-  }
+    .styles_icon__3ITVt {
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+    }
 }
 .styles_icon__3ITVt path {
-  fill: #6f6f6f;
-  opacity: 0.8;
+    fill: #6f6f6f;
+    opacity: 0.8;
 }
 .styles_icon__3ITVt:hover path {
-  fill: #30303f;
+    fill: #30303f;
 }
