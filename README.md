@@ -31,5 +31,4 @@ Go to [My Product Hunt](https://chrome.google.com/webstore/detail/jbchipnpikoidn
 See LICENSE for more details.
 
 ### TODO
-- Add to chorme store
 - Add release script
