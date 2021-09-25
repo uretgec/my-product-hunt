@@ -15,6 +15,9 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         document.querySelectorAll(myProductHunt.BlurryBlock).forEach(function(item) {
             item.removeAttribute("class");
         });
+
+        // Dark Mode Button Inject
+        document.body.classList.add("darkMode");
     }
 });
 

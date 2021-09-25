@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "My Product Hunt",
+    "short_name": "My PH",
+    "description": "Some basic personal changes made on Product Hunt website",
+    "version": "BUILD_NUMBER",
+    "homepage_url": "https://github.com/uretgec/my-product-hunt",
+    "permissions": [
+        "webNavigation"
+    ],
+    "icons": { 
+        "16": "icons/16.png",   
+        "32": "icons/32.png",
+        "128": "icons/128.png" 
+    },
+    "author": "Uretgec",
+    "offline_enabled": false,
+    "content_scripts": [
+        {
+          "matches": ["*://www.producthunt.com/*"],
+          "css": ["myStyles.css"],
+          "js": ["lib/producthunt.js","contentScript.js"],
+          "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+  }
