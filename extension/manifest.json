@@ -18,7 +18,7 @@
     "content_scripts": [
         {
           "matches": ["*://www.producthunt.com/*"],
-          "css": ["myStyles.css"],
+          "css": ["myStyles.css","assets/darkmode.css"],
           "js": ["lib/producthunt.js","contentScript.js"],
           "run_at": "document_idle"
         }

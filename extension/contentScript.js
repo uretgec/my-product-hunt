@@ -17,7 +17,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         });
 
         // Dark Mode Button Inject
-        document.body.classList.add("darkMode");
+        document.body.classList.add("myDarkMode");
+        document.body.classList.remove("white-background");
     }
 });
 
