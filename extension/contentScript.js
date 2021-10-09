@@ -1,7 +1,10 @@
 "use strict";
 
-// Get MyProductHunt with Dombili class
+// Get MyProductHunt Functions
 const myProductHunt = new MyProductHunt();
+
+// Get MyDarkMode Functions
+const myDarkMode = new MyDarkMode();
 
 // listen runtime message from bg
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
@@ -17,14 +20,32 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         });
 
         // Dark Mode Button Inject
-        document.body.classList.add("myDarkMode");
-        document.body.classList.remove("white-background");
+        let pageNavBlock = document.querySelector(".styles_hideOnSearch__3gL6L");
+        if(!!pageNavBlock) {
+            let darkModeToggle = document.createElement("div");
+            darkModeToggle.setAttribute("class","styles_navLink__veHL");
+            darkModeToggle.insertAdjacentHTML("beforeend", "🌜 🌞")
+            pageNavBlock.append(darkModeToggle);
+        }
+
+        myDarkMode
+            .getMode()
+            .then(function (currentMode) {
+                const predictMode = myDarkMode.predictMode(currentMode);
+                if(predictMode === myDarkMode.DarkModeActive) {
+                    document.body.classList.add("myDarkMode");
+                    document.body.classList.remove("white-background");
+                }                
+            })
+            .catch(function(e) {
+                console.warn("myDarkMode Error", e);
+            });
     }
 });
 
 // Mouse tracking
 let prevPostItemId = null;
-document.addEventListener("mouseover", function( event ) {
+document.addEventListener("mouseover", function (event) {
 
     setTimeout(function () {
         let relTarg = event.relatedTarget || event.toElement;
@@ -96,7 +117,7 @@ document.addEventListener("mouseover", function( event ) {
 
         })
         .catch(function(e) {
-            console.warn("Error", e);
+            console.warn("fetch Error", e);
         });
     }, 500);
     

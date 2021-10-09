@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Usage: ./release new-build-version
+# Usage: ./release 1.0.6
 # Before run: chmod a+x runme.sh
 # Local Variables
 ARGS=("$@")
