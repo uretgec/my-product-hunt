@@ -27,8 +27,8 @@ fi
 # zip Checker
 if [ -x "$(command -v zip)" ]
 then
-
-    zip -r $WHEREIAM/build/my-product-hunt-$BUILD_NUMBER_NEW.zip $WHEREIAM/extension -x "*.DS_Store" -x "__MACOSX"
+    cd $WHEREIAM/extension
+    zip -r $WHEREIAM/build/my-product-hunt-$BUILD_NUMBER_NEW.zip * -x "*.DS_Store" -x "__MACOSX" -x "*_original.css"
     echo "Extension folder compressed: my-product-hunt-$BUILD_NUMBER_NEW.zip"
 
 else
