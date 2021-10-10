@@ -1,3 +1,5 @@
 .vscode
 *.crx
 *.pem
+*.zip
+*_original*

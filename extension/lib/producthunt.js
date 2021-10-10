@@ -165,8 +165,12 @@ MyProductHunt.prototype.createHunterAndMakersBlock = function (product) {
         if(product.makers.length > 0) {
             for (let makerid = 0; makerid < product.makers.length; makerid++) {
                 const maker = product.makers[makerid];
-                content += '<a href="/@' + maker.username + '" title="' + maker.name + ' - ' + maker.headline.replace('"', "'") + '" target="_blank">'
-                + '<img src="' + maker.avatarUrl + '" alt="" class="styles_image__2cVru" style="width: 30px; height: 30px;">'
+                content += '<a href="/@' + maker.username + '" title="' + maker.name + ' - ' + maker.headline.replace('"', "'") + '" target="_blank"';
+                if(makerid > 0 && product.makers.length > 7) {
+                    content +=' style="margin-left:-15px"';
+                }
+                
+                content += '><img src="' + maker.avatarUrl + '" alt="" class="styles_image__2cVru" style="width: 30px; height: 30px;">'
                 + '</a>'
             }
         }
@@ -248,7 +252,7 @@ MyProductHunt.prototype.createHeadlineBlock = function (product) {
         + '<div class="styles_font__2Nqit styles_grey__3J1TQ styles_xSmall__1eYHj styles_normal__iGf4Q  styles_lineHeight__2RYYy styles_underline__20yPd styles_uppercase__2YIgd">'
         + 'Description'
         + '</div>'
-        + '<div class="styles_font__2Nqit styles_small__2bw6M styles_normal__iGf4Q styles_format__219oD styles_lineHeight__2RYYy styles_underline__20yPd">'
+        + '<div class="styles_font__2Nqit styles_grey__3J1TQ styles_small__2bw6M styles_normal__iGf4Q styles_format__219oD styles_lineHeight__2RYYy styles_underline__20yPd">'
         + product.meta.description
         + '</div>'
         + '</div>'
