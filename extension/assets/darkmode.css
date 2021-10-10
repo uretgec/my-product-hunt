@@ -276,7 +276,8 @@
 }
 body.myDarkMode,
 .myDarkMode .styles_container__1oevE,
-.myDarkMode .styles_modalWrap__3ZX4D {
+.myDarkMode .styles_modalWrap__3ZX4D,
+.myDarkMode .styles_contentBackground__WWkDC {
   background: #16161d;
   color: #6f6f6f;
 }
@@ -310,7 +311,8 @@ body.myDarkMode,
 
 .myDarkMode .styles_popper__1_ETA,
 .myDarkMode .styles_popover__DftuO,
-.myDarkMode .styles_link__2efWB {
+.myDarkMode .styles_link__2efWB,
+.myDarkMode .styles_login__2tm6p {
     background-color:rgba(33, 41, 60, 0.9);
     border: 1px solid #4b587c;
 }

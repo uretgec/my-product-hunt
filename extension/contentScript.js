@@ -25,19 +25,24 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         if(predictMode === myDarkMode.DarkModeActive) {
             document.body.classList.add("myDarkMode");
 
-            // TODO: bu class varsa data-old verisi olarak body ye eklemen gerekiyor
-            document.body.classList.remove("white-background");
+            if(document.body.classList.contains("white-background")) {
+                document.body.setAttribute("data-old", "white-background");
+                document.body.classList.remove("white-background");
+            }
         }
 
+        let darkModeToggleButton = document.getElementById("myDarkModeToggle");
         let pageNavBlock = document.querySelector(".styles_hideOnSearch__3gL6L");
-        if(!!pageNavBlock) {
+        if(!!pageNavBlock && !darkModeToggleButton) {
             let darkModeToggle = document.createElement("div");
             darkModeToggle.setAttribute("class","styles_navLink__veHL");
             darkModeToggle.insertAdjacentHTML("beforeend", '<a id="myDarkModeToggle" class="style_color-light-gray__3YboO style_color-d-dm-light-gray__2n7y6 style_fontSize-16__2dmEs style_fontWeight-400__2k6nc" data-id="' + predictMode + '" href="javascript:void(0);">' + myDarkMode.toggleIcon(predictMode) + '</a>')
             pageNavBlock.append(darkModeToggle);
 
-            document.getElementById("myDarkModeToggle").addEventListener("click", handlerDarkMode);
+            darkModeToggleButton = document.getElementById("myDarkModeToggle");
         }
+
+        darkModeToggleButton.addEventListener("click", handlerDarkMode);
     }
 });
 
@@ -138,10 +143,15 @@ function handlerDarkMode(event) {
         // Toggle DarkMode
         if (toggleMode === myDarkMode.DarkModeActive) {
             document.body.classList.add("myDarkMode");
-            document.body.classList.remove("white-background");
+            if(document.body.classList.contains("white-background")) {
+                document.body.setAttribute("data-old", "white-background");
+                document.body.classList.remove("white-background");
+            }
         } else {
             document.body.classList.remove("myDarkMode");
-            document.body.classList.add("white-background");
+            if(document.body.hasAttribute("data-old")) {
+                document.body.classList.add(document.body.getAttribute("data-old"));
+            }
         }
     }
 }
