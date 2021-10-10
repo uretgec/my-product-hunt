@@ -355,9 +355,14 @@ body.myDarkMode,
     fill: rgb(125, 138, 176);
 }
 
-.myDarkMode .styles_newVoteButton__saohg, .myDarkMode .styles_newVoteButton__saohg:hover,
+.myDarkMode .styles_newVoteButton__saohg, 
+.myDarkMode .styles_newVoteButton__saohg:hover,
 .myDarkMode .styles_button__3TLZg a:hover {
     background: rgba(33, 41, 60, 0.9);
+}
+
+.myDarkMode .styles_newVoteButton__saohg {
+    border-color: #4b587c!important;
 }
 
 .myDarkMode .styles_simpleVariant__1SJ3a:hover {
@@ -535,4 +540,26 @@ body.myDarkMode,
 
 .myDarkMode .styles_baseMenuToggle__2WgUX path {
     fill: #ffffff;
+}
+
+.myDarkMode .styles_icon__2kDip.styles_blackOrange__2IgdZ {
+    background-position: -335px 0px;
+}
+
+.myDarkMode #myDarkModeToggle {
+    border-color: #d9e1ec;
+    background-color: #fff;
+    padding: 7px 10px 7px 7px;
+    border-radius: 4px;
+    color: #4b587c;
+    fill: #4b587c;
+    transition: all .3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.myDarkMode #myDarkModeToggle:active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f64900;
 }
