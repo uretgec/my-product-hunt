@@ -348,7 +348,8 @@ body.myDarkMode,
 
 .myDarkMode .styles_simpleVariant__1SJ3a,
 .myDarkMode .styles_button__3TLZg,
-.myDarkMode .styles_installButton__1C1KQ {
+.myDarkMode .styles_installButton__1C1KQ,
+.myDarkMode .styles_container__12NFw .Select-control {
     background: rgb(22, 25, 32);
     border-color: #4b587c;
     color: rgb(125, 138, 176);
@@ -357,7 +358,8 @@ body.myDarkMode,
 
 .myDarkMode .styles_newVoteButton__saohg, 
 .myDarkMode .styles_newVoteButton__saohg:hover,
-.myDarkMode .styles_button__3TLZg a:hover {
+.myDarkMode .styles_button__3TLZg a:hover,
+.myDarkMode .styles_separator__1UCME {
     background: rgba(33, 41, 60, 0.9);
 }
 
@@ -542,8 +544,19 @@ body.myDarkMode,
     fill: #ffffff;
 }
 
+.myDarkMode .styles_icon__2kDip, 
 .myDarkMode .styles_icon__2kDip.styles_blackOrange__2IgdZ {
     background-position: -335px 0px;
+}
+
+.myDarkMode .styles_icon__2spkS,
+.myDarkMode .styles_icon__2spkS.styles_lightGrey__2FcHR {
+    background-position: -719px -10px;
+}
+
+.myDarkMode .styles_icon__2Zvtc,
+.myDarkMode .styles_icon__2Zvtc.styles_lightGrey__15TIK {
+    background-position: -475px -4px;
 }
 
 .myDarkMode #myDarkModeToggle {
@@ -562,4 +575,8 @@ body.myDarkMode,
 
 .myDarkMode #myDarkModeToggle:active {
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f64900;
+}
+
+.myDarkMode .styles_discussionVote__3N5kX {
+    padding: 0 8px 0 0!important;
 }
