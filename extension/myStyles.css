@@ -74,3 +74,12 @@
 .styles_icon__3ITVt:hover path {
     fill: #30303f;
 }
+
+/*DarkMode*/
+#myDarkModeToggle {
+    border-color: #f64900;
+    background-color: #f64900;
+    padding: 7px 10px 7px 7px;
+    border-radius: 5px;
+    color: #e8e8e8;
+}
