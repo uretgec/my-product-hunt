@@ -1,7 +1,7 @@
 # My Product Hunt Browser Extension
 Some basic personal changes made on Product Hunt website. Especially you will like Product Hunt Dark Mode Theme!
 
-![screenshot](https://raw.githubusercontent.com/uretgec/my-product-hunt/develop/screenshots/my-product-hunt-more-data.png)
+![screenshot](https://raw.githubusercontent.com/uretgec/my-product-hunt/develop/screenshots/my-product-hunt-darkmode-more-data.png)
 
 ## Feature
 - (NEW) Product Hunt Dark Mode is ready to use
