@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "My Product Hunt",
     "short_name": "My PH",
-    "description": "Some basic personal changes made on Product Hunt website",
+    "description": "Some basic personal changes made on Product Hunt website with Dark Mode Theme",
     "version": "BUILD_NUMBER",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
@@ -18,8 +18,8 @@
     "content_scripts": [
         {
           "matches": ["*://www.producthunt.com/*"],
-          "css": ["myStyles.css"],
-          "js": ["lib/producthunt.js","contentScript.js"],
+          "css": ["myStyles.css","assets/darkmode.css"],
+          "js": ["lib/producthunt.js","lib/darkmode.js","contentScript.js"],
           "run_at": "document_idle"
         }
     ],

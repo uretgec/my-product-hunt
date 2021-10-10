@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "My Product Hunt",
     "short_name": "My PH",
-    "description": "Some basic personal changes made on Product Hunt website",
+    "description": "Some basic personal changes made on Product Hunt website with Dark Mode Theme",
     "version": "1.0.6",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
