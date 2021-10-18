@@ -50,6 +50,10 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 let prevPostItemId = null;
 document.addEventListener("mouseover", function (event) {
 
+    // TODO: Aynı anda birden çok aynı yere girip çıkınca 2 kere gösterme oluyor. Burada belli bir timeout koyup işlemi event.preventdefault yapmak gerekiyor....
+    // TODO: Bir alana girildiğinde kesinlikle hemen bir işaretleme yapılmalı ve belli bir süre duruyorsa loading bar gösterilmeli. 2.kere istek yapması engellenmeli.
+    // TODO: https://github.com/jsplumb/mottle repo işe yarayabilir. Eğer doğru işleme karar verildiyse bir event tetiklenir ve aşağıdaki kod çalışır.
+
     let relTarg = event.relatedTarget || event.toElement;
     let postItemObj = relTarg.closest(myProductHunt.ProductPostBlock);
     if(postItemObj === null) return;
@@ -62,7 +66,8 @@ document.addEventListener("mouseover", function (event) {
     if(prevPostItemId === currentPostItemId) return;
     prevPostItemId = currentPostItemId;
     
-    let postItemUri = postItemObj.querySelector('a[data-test="post-name-' + currentPostItemId + '"]');
+    //let postItemUri = postItemObj.querySelector('a[data-test="post-name-' + currentPostItemId + '"]');
+    let postItemUri = postItemObj.querySelector('a');
     if(postItemUri === null) return;
 
     let postItemSlug = postItemUri.getAttribute("href").replace("/posts/","");
@@ -73,7 +78,7 @@ document.addEventListener("mouseover", function (event) {
     
     // Inject post item div
     extraContentContainer.insertAdjacentHTML("beforeend", myProductHunt.createLoadingBarBlock());
-    postItemObj.append(extraContentContainer);
+    postItemObj.after(extraContentContainer);
     
     // Graphql Post Request
     fetch(
@@ -115,7 +120,7 @@ document.addEventListener("mouseover", function (event) {
 
         extraContentContainer.innerHTML = ''; // Sorry about that
         extraContentContainer.insertAdjacentHTML("beforeend", extraContentBlock);
-        postItemObj.append(extraContentContainer);
+        postItemObj.after(extraContentContainer);
 
     })
     .catch(function(e) {
