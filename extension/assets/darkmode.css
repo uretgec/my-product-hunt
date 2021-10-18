@@ -292,10 +292,14 @@ body.myDarkMode,
 .myDarkMode .styles_container__4Ydg1 {
     /*display: flex;
     flex-direction: column;
-    align-items: stretch;*/
+    align-items: stretch;
     border-top: 1px solid #4b587c;
-    /*margin: 0px 20px;
+    margin: 0px 20px;
     padding: 10px 0px;*/
+    background: #21293c;
+    border: 1px solid rgb(75, 88, 124);
+    margin: 10px 0 0 0;
+    padding: 20px 20px 0 20px;
 }
 
 .myDarkMode .styles_content__2SyXA {
@@ -457,6 +461,36 @@ body.myDarkMode,
     .myDarkMode .styles_postItem__3dZRy .styles_upvoteButtonContainer__1QzTu.styles_desktop__qXbdz {
         background-image: none;
     }
+
+    /*NEW*/
+    .myDarkMode .styles_item__1QTTj,
+    .myDarkMode .styles_item__1FrS_ { 
+        background-color: rgb(22, 22, 29);
+        background-image: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .myDarkMode .styles_item__1QTTj:hover,
+    .myDarkMode .styles_item__1FrS_:hover {
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: rgb(22, 22, 29);
+    }
+
+    .myDarkMode .styles_item__t3KS1 {
+        padding: 24px 0;
+        border-bottom: 1px solid #21293c;
+        border-top: 1px solid #21293c;
+        margin: -24px 0;
+        background-color: rgb(22, 22, 29);
+        background-image: none;
+    }
+
+    .myDarkMode .styles_item__t3KS1:hover {
+        background-color: rgba(22, 22, 29, 0.9);
+    }
+    /*NEW*/
 }
 
 .myDarkMode .styles_title__1pqJi {
@@ -582,3 +616,32 @@ body.myDarkMode,
 .myDarkMode .styles_discussionVote__3N5kX {
     padding: 0 8px 0 0!important;
 }
+
+/*NEW*/
+.myDarkMode .style_sidebarWithSeparator___M3Mc {
+    border-left: 1px solid #4b587c;
+}
+
+.myDarkMode .styles_counter__r76WB.styles_minimal__iIzrA {
+    padding: 0 8px!important;
+}
+
+.myDarkMode .styles_link__5GP3c:hover, 
+.myDarkMode .styles_selected__1iz3g {
+    background: #21293c;
+    border: 1px solid #21293c;
+    padding: 3px 12px;
+}
+
+.myDarkMode .styles_descriptionHtml__2UKbP {
+    color: #fff;
+}
+
+.myDarkMode .styles_option__4pI9l {
+    background: none;
+}
+
+.myDarkMode .styles_header__3XJMs {
+    background: none;
+}
+/*NEW*/
