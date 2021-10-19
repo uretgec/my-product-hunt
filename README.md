@@ -10,14 +10,15 @@ Some basic personal changes made on Product Hunt website. Especially you will li
 - Shows more data of product detail without go to detail page
 
 ## Compatibility
-- Chrome
-- Firefox (soon)
+- Chrome (Manifestv3)
+- Firefox (Manifestv2)
 
 ## Installation
 
-### Chrome Store
+### Chrome Store/Firefox Add-Ons
 
 Go to [My Product Hunt](https://chrome.google.com/webstore/detail/jbchipnpikoidnjdgmjdipiandcjhilp) Chrome Store Page
+Go to [My Product Hunt](https://addons.mozilla.org/en-US/firefox/addon/my-product-hunt/) Firefox Add-Ons Page
 
 ### Local
 
