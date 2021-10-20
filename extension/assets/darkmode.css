@@ -298,8 +298,10 @@ body.myDarkMode,
     padding: 10px 0px;*/
     background: #21293c;
     border: 1px solid rgb(75, 88, 124);
+    /*margin: 10px 0 0 0;
+    padding: 20px 20px 0 20px;*/
     margin: 10px 0 0 0;
-    padding: 20px 20px 0 20px;
+    padding: 10px;
 }
 
 .myDarkMode .styles_content__2SyXA {
