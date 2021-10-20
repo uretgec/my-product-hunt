@@ -55,7 +55,12 @@ document.addEventListener("mouseover", function (event) {
     // TODO: https://github.com/jsplumb/mottle repo işe yarayabilir. Eğer doğru işleme karar verildiyse bir event tetiklenir ve aşağıdaki kod çalışır.
 
     let relTarg = event.relatedTarget || event.toElement;
+    let productPostBlockID = 1;
     let postItemObj = relTarg.closest(myProductHunt.ProductPostBlock);
+    if(postItemObj === null) {
+        postItemObj = relTarg.closest(myProductHunt.ProductSecondPostBlock);
+        productPostBlockID = 2;
+    }
     if(postItemObj === null) return;
 
     // Checked data-marked attribute
@@ -78,7 +83,12 @@ document.addEventListener("mouseover", function (event) {
     
     // Inject post item div
     extraContentContainer.insertAdjacentHTML("beforeend", myProductHunt.createLoadingBarBlock());
-    postItemObj.after(extraContentContainer);
+    if(productPostBlockID === 2) {
+        postItemObj.append(extraContentContainer);
+    } else {
+        postItemObj.after(extraContentContainer);
+    }
+    
     
     // Graphql Post Request
     fetch(
@@ -120,7 +130,11 @@ document.addEventListener("mouseover", function (event) {
 
         extraContentContainer.innerHTML = ''; // Sorry about that
         extraContentContainer.insertAdjacentHTML("beforeend", extraContentBlock);
-        postItemObj.after(extraContentContainer);
+        if(productPostBlockID === 2) {
+            postItemObj.append(extraContentContainer);
+        } else {
+            postItemObj.after(extraContentContainer);
+        }
 
     })
     .catch(function(e) {

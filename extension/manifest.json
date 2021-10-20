@@ -1,9 +1,9 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "My Product Hunt",
     "short_name": "My PH",
     "description": "Some basic personal changes made on Product Hunt website with Dark Mode Theme",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
         "webNavigation"
@@ -24,7 +24,6 @@
         }
     ],
     "background": {
-        "scripts": ["background.js"],
-        "persistent": true
+        "service_worker": "background.js"
     }
   }

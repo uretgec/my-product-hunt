@@ -6,6 +6,7 @@ MyProductHunt.prototype.BaseUri = "https://www.producthunt.com"
 MyProductHunt.prototype.SignupBlock = ".styles_overlay__2r_YH"
 MyProductHunt.prototype.BlurryBlock = ".styles_content__1JfPV"
 MyProductHunt.prototype.ProductPostBlock = ".styles_item__1QTTj"
+MyProductHunt.prototype.ProductSecondPostBlock = ".styles_item__2kQQ5"
 MyProductHunt.prototype.ExtraContentClassName = "styles_container__4Ydg1"
 MyProductHunt.prototype.ImgixSuffixQuery = "?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
 

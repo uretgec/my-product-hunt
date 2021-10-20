@@ -1,8 +1,8 @@
 /* via: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
 .styles_container__4Ydg1 {
-    border-top: 1px solid #e8e8e8;
-    margin: 0 20px;
-    padding: 10px 0;
+    border: 1px solid #e8e8e8;
+    margin: 10px 0 0 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
