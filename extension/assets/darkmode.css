@@ -241,10 +241,51 @@ font color: #f5f8ff
   border-image: none;
 }
 
-.myDarkMode .styles_line__6Gr1Y {
+.myDarkMode .styles_line__6Gr1Y,
+.myDarkMode .styles_line__z39eN {
   background-color: #21293c;
 }
 
 .myDarkMode .styles_container__0dgmN {
   border-color: #21293c;
+}
+
+/*page - product item*/
+.myDarkMode .styles_latestLaunches__u5lpC .styles_launchItem__rvqh6 {
+  border:1px solid #21293c;
+  border-top: 0;
+  border-right: 0;
+}
+
+.myDarkMode .styles_container__2gAiD,
+.myDarkMode .styles_activityFeed__n25pq li {
+  border-bottom: 1px solid #21293c;
+}
+
+.myDarkMode .styles_topicButtonList__hAW_f,
+.myDarkMode .styles_topicButtonListItem__9elZC {
+  border: 1px solid #21293c;
+}
+
+/*page - search*/
+.myDarkMode .styles_hoverGradient__8U229 {
+  background-image: none;
+  transition: none;
+}
+
+.myDarkMode .styles_hoverGradient__8U229:hover {
+  background-color: transparent;
+}
+
+.myDarkMode .styles_link__BDJXj {
+  background-color: transparent;
+  border: 1px solid #21293c;
+}
+
+.myDarkMode .styles_pillLink__URmD_ {
+  border: 1px solid #21293c;
+}
+
+.myDarkMode .styles_sidebar___xsnn {
+  border-right: 1px solid #21293c;
 }

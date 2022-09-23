@@ -19,7 +19,7 @@
         {
             "matches": ["*://www.producthunt.com/*"],
             "css": ["myStyles.css","assets/darkmode.css"],
-            "run_at": "document_idle"
+            "run_at": "document_end"
         },
         {
           "matches": ["*://www.producthunt.com/*"],
