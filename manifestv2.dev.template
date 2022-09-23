@@ -1,8 +1,8 @@
 {
-    "manifest_version": 3,
-    "name": "My Product Hunt",
+    "manifest_version": 2,
+    "name": "My Product Hunt - DEVELOPMENT BUILD",
     "short_name": "My PH",
-    "description": "Adds Dark Mode Theme and no click product info block of Product Hunt website.",
+    "description": "THIS EXTENSION IS FOR BETA TESTING",
     "version": "BUILD_NUMBER",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
@@ -28,6 +28,7 @@
         }
     ],
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"],
+        "persistent": true
     }
   }

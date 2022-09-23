@@ -1,59 +1,21 @@
 "use strict";
 
-// Get MyProductHunt Functions
+// Init Managers
 const myProductHunt = new MyProductHunt();
-
-// Get MyDarkMode Functions
 const myDarkMode = new MyDarkMode();
 
 // listen runtime message from bg
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if(request.action === "IM_READY") {
-        // Remove signup block
-        document.querySelectorAll(myProductHunt.SignupBlock).forEach(function(item) {
-            item.remove();
-        });
 
-        // Remove blur bg
-        document.querySelectorAll(myProductHunt.BlurryBlock).forEach(function(item) {
-            item.removeAttribute("class");
-        });
-
-        // Dark Mode Button Inject
-        const currentMode = myDarkMode.getMode();
-        const predictMode = myDarkMode.predictMode(currentMode);
-        if(predictMode === myDarkMode.DarkModeActive) {
-            document.body.classList.add("myDarkMode");
-
-            if(document.body.classList.contains("white-background")) {
-                document.body.setAttribute("data-old", "white-background");
-                document.body.classList.remove("white-background");
-            }
-        }
-
-        let darkModeToggleButton = document.getElementById("myDarkModeToggle");
-        let pageNavBlock = document.querySelector(".styles_hideOnSearch__3gL6L");
-        if(!!pageNavBlock && !darkModeToggleButton) {
-            let darkModeToggle = document.createElement("div");
-            darkModeToggle.setAttribute("class","styles_navLink__veHL");
-            darkModeToggle.insertAdjacentHTML("beforeend", '<a id="myDarkModeToggle" class="style_color-light-gray__3YboO style_color-d-dm-light-gray__2n7y6 style_fontSize-16__2dmEs style_fontWeight-400__2k6nc" data-id="' + predictMode + '" href="javascript:void(0);">' + myDarkMode.toggleIcon(predictMode) + '</a>')
-            pageNavBlock.append(darkModeToggle);
-
-            darkModeToggleButton = document.getElementById("myDarkModeToggle");
-        }
-
-        darkModeToggleButton.addEventListener("click", handlerDarkMode);
+        // inject dark mode toggle button
+        myDarkMode._process()
     }
 });
 
-// Mouse tracking
+// mouse tracking
 let prevPostItemId = null;
 document.addEventListener("mouseover", function (event) {
-
-    // TODO: Aynı anda birden çok aynı yere girip çıkınca 2 kere gösterme oluyor. Burada belli bir timeout koyup işlemi event.preventdefault yapmak gerekiyor....
-    // TODO: Bir alana girildiğinde kesinlikle hemen bir işaretleme yapılmalı ve belli bir süre duruyorsa loading bar gösterilmeli. 2.kere istek yapması engellenmeli.
-    // TODO: https://github.com/jsplumb/mottle repo işe yarayabilir. Eğer doğru işleme karar verildiyse bir event tetiklenir ve aşağıdaki kod çalışır.
-
     let relTarg = event.relatedTarget || event.toElement;
     let productPostBlockID = 1;
     let postItemObj = relTarg.closest(myProductHunt.ProductPostBlock);
@@ -70,12 +32,22 @@ document.addEventListener("mouseover", function (event) {
     let currentPostItemId = postItemObj.getAttribute("data-test").replace("post-item-","");
     if(prevPostItemId === currentPostItemId) return;
     prevPostItemId = currentPostItemId;
+
+    // Product marked after success response
+    postItemObj.setAttribute("data-marked", currentPostItemId);
     
     //let postItemUri = postItemObj.querySelector('a[data-test="post-name-' + currentPostItemId + '"]');
     let postItemUri = postItemObj.querySelector('a');
     if(postItemUri === null) return;
 
     let postItemSlug = postItemUri.getAttribute("href").replace("/posts/","");
+    postItemSlug = postItemSlug.replace("/products/","");
+    
+    // # check - fragment
+    let fragment = postItemSlug.indexOf("#")
+    if (fragment !== -1) {
+        postItemSlug = postItemSlug.substr(0, fragment)
+    }
 
     // Extra content div created
     let extraContentContainer = document.createElement("div");
@@ -88,7 +60,6 @@ document.addEventListener("mouseover", function (event) {
     } else {
         postItemObj.after(extraContentContainer);
     }
-    
     
     // Graphql Post Request
     fetch(
@@ -103,14 +74,10 @@ document.addEventListener("mouseover", function (event) {
     })
     .then(function(product) {
 
-        // Product marked after success response
-        postItemObj.setAttribute("data-marked", currentPostItemId);
-
         // First Row: Hunter and Makers - Reviews + Socials
         let extraContentBlock = myProductHunt.createRowContainerBlock(
             myProductHunt.createHunterAndMakersBlock(product),
             myProductHunt.createReviewsBlock(product),
-            myProductHunt.createSocialsBlock(product)
         );
 
         // Second Row: Headline
@@ -138,36 +105,7 @@ document.addEventListener("mouseover", function (event) {
 
     })
     .catch(function(e) {
-        console.warn("fetch Error", e);
+        extraContentContainer.innerHTML = ''; // Sorry about that
     });    
 }, false);
 
-// Toggle DarkMode
-function handlerDarkMode(event) {
-
-    let toggleElement = event.target || null;
-    if(!!toggleElement) {
-
-        // Update toggle icon
-        let toggleMode = myDarkMode.toggleMode(toggleElement.getAttribute("data-id"));
-        toggleElement.setAttribute("data-id", toggleMode);
-        toggleElement.innerHTML = myDarkMode.toggleIcon(toggleMode);
-
-        // Update localstorage data
-        myDarkMode.setMode(toggleMode);
-
-        // Toggle DarkMode
-        if (toggleMode === myDarkMode.DarkModeActive) {
-            document.body.classList.add("myDarkMode");
-            if(document.body.classList.contains("white-background")) {
-                document.body.setAttribute("data-old", "white-background");
-                document.body.classList.remove("white-background");
-            }
-        } else {
-            document.body.classList.remove("myDarkMode");
-            if(document.body.hasAttribute("data-old")) {
-                document.body.classList.add(document.body.getAttribute("data-old"));
-            }
-        }
-    }
-}

@@ -3,3 +3,4 @@
 *.pem
 *.zip
 *_original*
+build/*

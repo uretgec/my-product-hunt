@@ -1,0 +1,787 @@
+[{
+    "data": {
+        "viewer": {
+            "id": null,
+            "abTestPostPageNewAdSlot": "show3",
+            "__typename": "Viewer"
+        },
+        "post": {
+            "id": "360353",
+            "slug": "charlie-2-0-2",
+            "name": "Charlie 2.0",
+            "trashedAt": null,
+            "isArchived": false,
+            "primaryAd": {
+                "id": "12080",
+                "post": {
+                    "id": "144287",
+                    "slug": "flatfile",
+                    "name": "Flatfile",
+                    "updatedAt": "2022-09-22T15:36:05-07:00",
+                    "commentsCount": 110,
+                    "featuredAt": "2019-02-05T01:24:25-08:00",
+                    "createdAt": "2019-02-05T01:24:25-08:00",
+                    "disabledWhenScheduled": true,
+                    "hasVoted": false,
+                    "votesCount": 5916,
+                    "__typename": "Post"
+                },
+                "ctaText": null,
+                "dealText": null,
+                "name": "Flatfile X",
+                "tagline": "The missing API for CSV import - get early access",
+                "thumbnailUuid": "b437cd0b-72ec-4f99-b81d-e7b3c680e952.png",
+                "url": "/r/ad/12080",
+                "__typename": "AdChannel"
+            },
+            "redirectToProduct": null,
+            "tagline": "AI content creation for everyone",
+            "dailyRank": 1,
+            "createdAt": "2022-09-22T00:21:23-07:00",
+            "showDailyRank": true,
+            "thumbnailImageUuid": "83b3547f-9b99-42c6-b7c6-22388eb7ac6d.jpeg",
+            "productState": "default",
+            "__typename": "Post",
+            "featuredAt": "2022-09-22T00:21:23-07:00",
+            "updatedAt": "2022-09-22T15:30:48-07:00",
+            "disabledWhenScheduled": true,
+            "hasVoted": false,
+            "votesCount": 944,
+            "isAvailable": true,
+            "links": [
+                {
+                    "id": "514814",
+                    "redirectPath": "/r/01e74fe4affbe2",
+                    "storeName": "Website",
+                    "websiteName": "dashboard.gocharlie.ai",
+                    "devices": [],
+                    "__typename": "ProductLink"
+                }
+            ],
+            "badges": {
+                "edges": [
+                    {
+                        "node": {
+                            "id": "1131654",
+                            "post": {
+                                "id": "360353",
+                                "name": "Charlie 2.0",
+                                "__typename": "Post"
+                            },
+                            "position": 1,
+                            "period": "daily",
+                            "date": "2022-09-22",
+                            "__typename": "TopPostBadge"
+                        },
+                        "__typename": "BadgeEdge"
+                    }
+                ],
+                "__typename": "BadgeConnection"
+            },
+            "userId": "4598581",
+            "canManage": false,
+            "description": "\u003cdiv\u003eCharlie is your new best friend for creating content. He can generate HD, 2K, 4K, Widescreen, Vertical and square images. In addition, he can create highly engaging blogs and other text content for branding and marketing needs. We hope you enjoy fetching!\u003c/div\u003e",
+            "pricingType": "free_options",
+            "isCollected": false,
+            "url": "https://www.producthunt.com/posts/charlie-2-0-2",
+            "promo": {
+                "text": "40% Off",
+                "code": "CHARLIE40",
+                "__typename": "PostPromo"
+            },
+            "product": {
+                "id": "487539",
+                "slug": "gocharlie-ai",
+                "name": "GoCharlie.ai",
+                "tagline": "Create content that performs",
+                "logoUuid": "5b5e2708-ae64-4a1a-8dbf-5958ba92ffae.jpeg",
+                "description": "Charlie is an AI engine that's the new GEAR in your content creation process. Generate, Enhance, Analyze and Respond to social media marketing content. Charlie has been trained to optimize content and convert your audience into paying customers.",
+                "followersCount": 1915,
+                "reviewsRating": 5.0,
+                "reviewsCount": 2,
+                "topics": {
+                    "edges": [
+                        {
+                            "node": {
+                                "id": "46",
+                                "slug": "productivity",
+                                "name": "Productivity",
+                                "__typename": "Topic"
+                            },
+                            "__typename": "TopicEdge"
+                        },
+                        {
+                            "node": {
+                                "id": "164",
+                                "slug": "marketing",
+                                "name": "Marketing",
+                                "__typename": "Topic"
+                            },
+                            "__typename": "TopicEdge"
+                        }
+                    ],
+                    "__typename": "TopicConnection"
+                },
+                "isSubscribed": false,
+                "__typename": "Product",
+                "isNoLongerOnline": false,
+                "isMuted": false,
+                "cleanUrl": "gocharlie.ai",
+                "websiteUrl": "https://www.gocharlie.ai",
+                "reviewersCount": 2,
+                "firstPost": {
+                    "id": "352664",
+                    "createdAt": "2022-07-15T17:18:43-07:00",
+                    "__typename": "Post"
+                },
+                "postsCount": 2
+            },
+            "topics": {
+                "edges": [
+                    {
+                        "node": {
+                            "id": "46",
+                            "slug": "productivity",
+                            "name": "Productivity",
+                            "__typename": "Topic"
+                        },
+                        "__typename": "TopicEdge"
+                    },
+                    {
+                        "node": {
+                            "id": "164",
+                            "slug": "marketing",
+                            "name": "Marketing",
+                            "__typename": "Topic"
+                        },
+                        "__typename": "TopicEdge"
+                    },
+                    {
+                        "node": {
+                            "id": "268",
+                            "slug": "artificial-intelligence",
+                            "name": "Artificial Intelligence",
+                            "__typename": "Topic"
+                        },
+                        "__typename": "TopicEdge"
+                    }
+                ],
+                "totalCount": 3,
+                "__typename": "TopicConnection"
+            },
+            "secondaryAd": {
+                "id": "12080",
+                "post": {
+                    "id": "144287",
+                    "slug": "flatfile",
+                    "name": "Flatfile",
+                    "updatedAt": "2022-09-22T15:36:05-07:00",
+                    "commentsCount": 110,
+                    "featuredAt": "2019-02-05T01:24:25-08:00",
+                    "createdAt": "2019-02-05T01:24:25-08:00",
+                    "disabledWhenScheduled": true,
+                    "hasVoted": false,
+                    "votesCount": 5916,
+                    "__typename": "Post"
+                },
+                "ctaText": null,
+                "dealText": null,
+                "name": "Flatfile X",
+                "tagline": "The missing API for CSV import - get early access",
+                "thumbnailUuid": "b437cd0b-72ec-4f99-b81d-e7b3c680e952.png",
+                "url": "/r/ad/12080",
+                "__typename": "AdChannel"
+            },
+            "isMaker": false,
+            "isHunter": false,
+            "moderationReason": null,
+            "primaryLink": {
+                "id": "514814",
+                "url": "https://dashboard.gocharlie.ai/",
+                "__typename": "ProductLink"
+            },
+            "commentsCount": 119,
+            "weeklyRank": 4,
+            "showWeeklyRank": true,
+            "user": {
+                "id": "4598581",
+                "name": "Brennan Woodruff",
+                "username": "brennanwoodruff",
+                "avatarUrl": "https://ph-avatars.imgix.net/4598581/original",
+                "headline": "Finance guy gone AI Product Developer",
+                "isViewer": false,
+                "badgesCount": 1,
+                "badgesUniqueCount": 0,
+                "karmaBadge": {
+                    "kind": "BRONZE",
+                    "score": 120,
+                    "__typename": "KarmaBadge"
+                },
+                "__typename": "User"
+            },
+            "makers": [
+                {
+                    "id": "4598581",
+                    "name": "Brennan Woodruff",
+                    "username": "brennanwoodruff",
+                    "avatarUrl": "https://ph-avatars.imgix.net/4598581/original",
+                    "headline": "Finance guy gone AI Product Developer",
+                    "isViewer": false,
+                    "badgesCount": 1,
+                    "badgesUniqueCount": 0,
+                    "karmaBadge": {
+                        "kind": "BRONZE",
+                        "score": 120,
+                        "__typename": "KarmaBadge"
+                    },
+                    "__typename": "User"
+                }
+            ],
+            "media": [
+                {
+                    "id": "1197369",
+                    "originalHeight": 720,
+                    "originalWidth": 1280,
+                    "imageUuid": "c4233286-4ad9-42be-a13c-831bf0ea2447.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "1197368",
+                    "originalHeight": 720,
+                    "originalWidth": 1280,
+                    "imageUuid": "3446e478-240b-4fe1-926a-1ba071b2a895.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "1197367",
+                    "originalHeight": 720,
+                    "originalWidth": 1280,
+                    "imageUuid": "d9486f89-6449-45af-9c61-3e6b019c40d8.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "1197366",
+                    "originalHeight": 720,
+                    "originalWidth": 1280,
+                    "imageUuid": "d8636ecd-e851-48c0-a44a-b20051cb7111.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "1197365",
+                    "originalHeight": 720,
+                    "originalWidth": 1280,
+                    "imageUuid": "41b2ab17-4598-4894-be4d-507eb415a0da.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "1197364",
+                    "originalHeight": 720,
+                    "originalWidth": 1280,
+                    "imageUuid": "dde3984a-89da-46b6-bf52-1e28f8a40629.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                }
+            ],
+            "structuredData": {
+                "@context": "http://schema.org",
+                "@type": "WebApplication",
+                "name": "Charlie 2.0",
+                "description": "Charlie is your new best friend for creating content. He can generate HD, 2K, 4K, Widescreen, Vertical and square images. In addition, he can create highly engaging blogs and other text content for branding and marketing needs. We hope you enjoy fetching!",
+                "datePublished": "2022-09-20T21:31:30.391-07:00",
+                "dateModified": "2022-09-22T15:30:48.601-07:00",
+                "image": "https://ph-files.imgix.net/83b3547f-9b99-42c6-b7c6-22388eb7ac6d.jpeg?auto=format",
+                "screenshot": [
+                    "https://ph-files.imgix.net/c4233286-4ad9-42be-a13c-831bf0ea2447.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/3446e478-240b-4fe1-926a-1ba071b2a895.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/d9486f89-6449-45af-9c61-3e6b019c40d8.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/d8636ecd-e851-48c0-a44a-b20051cb7111.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/41b2ab17-4598-4894-be4d-507eb415a0da.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/dde3984a-89da-46b6-bf52-1e28f8a40629.png?auto=format\u0026fit=crop"
+                ],
+                "offers": {
+                    "@type": "Offer",
+                    "price": 0,
+                    "priceCurrency": "USD"
+                },
+                "applicationCategory": "Productivity",
+                "author": [
+                    {
+                        "@type": "Person",
+                        "name": "Brennan Woodruff",
+                        "image": "https://ph-avatars.imgix.net/4598581/original?auto=format\u0026fit=crop\u0026crop=faces\u0026w=100\u0026h=100",
+                        "url": "https://www.producthunt.com/@brennanwoodruff"
+                    }
+                ]
+            },
+            "meta": {
+                "canonicalUrl": "https://www.producthunt.com/posts/charlie-2-0-2",
+                "creator": "@brennanwoodruff",
+                "description": "Charlie is your new best friend for creating content. He can generate HD, 2K, 4K, Widescreen, Vertical and square images. In addition, he can create highly engaging blogs and other text content for branding and marketing needs. We hope you enjoy fetching!",
+                "image": "https://ph-files.imgix.net/c4233286-4ad9-42be-a13c-831bf0ea2447.png?auto=format\u0026fit=crop\u0026frame=1\u0026h=512\u0026w=1024",
+                "mobileAppUrl": "producthunt://post/360353",
+                "oembedUrl": "https://www.producthunt.com/posts/charlie-2-0-2",
+                "robots": null,
+                "title": "Charlie 2.0 - AI content creation for everyone",
+                "type": "product",
+                "author": "Brennan Woodruff",
+                "authorUrl": "https://www.producthunt.com/@brennanwoodruff",
+                "__typename": "MetaTags"
+            }
+        }
+    }
+},
+
+{
+    "data": {
+        "viewer": {
+            "id": null,
+            "abTestPostPageNewAdSlot": "show3",
+            "__typename": "Viewer"
+        },
+        "post": {
+            "id": "76",
+            "slug": "slack",
+            "name": "Slack",
+            "trashedAt": null,
+            "isArchived": true,
+            "primaryAd": {
+                "id": "12080",
+                "post": {
+                    "id": "144287",
+                    "slug": "flatfile",
+                    "name": "Flatfile",
+                    "updatedAt": "2022-09-22T16:18:08-07:00",
+                    "commentsCount": 110,
+                    "featuredAt": "2019-02-05T01:24:25-08:00",
+                    "createdAt": "2019-02-05T01:24:25-08:00",
+                    "disabledWhenScheduled": true,
+                    "hasVoted": false,
+                    "votesCount": 5918,
+                    "__typename": "Post"
+                },
+                "ctaText": null,
+                "dealText": null,
+                "name": "Flatfile X",
+                "tagline": "The missing API for CSV import - get early access",
+                "thumbnailUuid": "b437cd0b-72ec-4f99-b81d-e7b3c680e952.png",
+                "url": "/r/ad/12080",
+                "__typename": "AdChannel"
+            },
+            "redirectToProduct": {
+                "id": "107288",
+                "slug": "slack",
+                "__typename": "Product"
+            },
+            "tagline": "Be less busy. Real-time messaging, archiving \u0026 search.",
+            "dailyRank": 1,
+            "createdAt": "2013-12-03T10:11:40-08:00",
+            "showDailyRank": true,
+            "thumbnailImageUuid": "a1a7887b-04ad-4d69-b395-f2d58443f836.png",
+            "productState": "default",
+            "__typename": "Post",
+            "featuredAt": "2013-12-03T10:11:40-08:00",
+            "updatedAt": "2022-09-22T08:31:17-07:00",
+            "disabledWhenScheduled": true,
+            "hasVoted": false,
+            "votesCount": 18341,
+            "isAvailable": true,
+            "links": [
+                {
+                    "id": "17464",
+                    "redirectPath": "/r/1ca95d917f",
+                    "storeName": "Website",
+                    "websiteName": "slack.com",
+                    "devices": [],
+                    "__typename": "ProductLink"
+                },
+                {
+                    "id": "389892",
+                    "redirectPath": "/r/905a0e9ef5b2da",
+                    "storeName": "Other",
+                    "websiteName": "investor.salesforce.com",
+                    "devices": [],
+                    "__typename": "ProductLink"
+                }
+            ],
+            "badges": {
+                "edges": [
+                    {
+                        "node": {
+                            "id": "6",
+                            "post": {
+                                "id": "76",
+                                "name": "Slack",
+                                "__typename": "Post"
+                            },
+                            "position": 1,
+                            "period": "monthly",
+                            "date": "2013-12-03",
+                            "__typename": "TopPostBadge"
+                        },
+                        "__typename": "BadgeEdge"
+                    },
+                    {
+                        "node": {
+                            "id": "6884",
+                            "post": {
+                                "id": "76",
+                                "name": "Slack",
+                                "__typename": "Post"
+                            },
+                            "position": 1,
+                            "period": "weekly",
+                            "date": "2013-12-03",
+                            "__typename": "TopPostBadge"
+                        },
+                        "__typename": "BadgeEdge"
+                    },
+                    {
+                        "node": {
+                            "id": "253",
+                            "post": {
+                                "id": "76",
+                                "name": "Slack",
+                                "__typename": "Post"
+                            },
+                            "position": 1,
+                            "period": "daily",
+                            "date": "2013-12-03",
+                            "__typename": "TopPostBadge"
+                        },
+                        "__typename": "BadgeEdge"
+                    }
+                ],
+                "__typename": "BadgeConnection"
+            },
+            "userId": "49",
+            "canManage": false,
+            "description": "\u003cdiv\u003eSlack is a collaboration hub for work, no matter what work you do. It’s a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.\u003c/div\u003e",
+            "pricingType": null,
+            "isCollected": false,
+            "url": "https://www.producthunt.com/posts/slack",
+            "promo": null,
+            "product": {
+                "id": "107288",
+                "slug": "slack",
+                "name": "Slack",
+                "tagline": "One platform for your team and your work",
+                "logoUuid": "2f06cf02-5fa1-4b17-8246-8b4499d50e33.jpeg",
+                "description": "Make work life simpler, more pleasant and more productive.\r\n\r\nSlack is the collaboration hub that brings the right people, information, and tools together to get work done. From Fortune 100 companies to corner markets, millions of people around the world use Slack to connect their teams, unify their systems, and drive their business forward.",
+                "followersCount": 483,
+                "reviewsRating": 4.58,
+                "reviewsCount": 530,
+                "topics": {
+                    "edges": [
+                        {
+                            "node": {
+                                "id": "21",
+                                "slug": "web-app",
+                                "name": "Web App",
+                                "__typename": "Topic"
+                            },
+                            "__typename": "TopicEdge"
+                        },
+                        {
+                            "node": {
+                                "id": "44",
+                                "slug": "design-tools",
+                                "name": "Design Tools",
+                                "__typename": "Topic"
+                            },
+                            "__typename": "TopicEdge"
+                        }
+                    ],
+                    "__typename": "TopicConnection"
+                },
+                "isSubscribed": false,
+                "__typename": "Product",
+                "isNoLongerOnline": false,
+                "isMuted": false,
+                "cleanUrl": "slack.com",
+                "websiteUrl": "https://slack.com",
+                "reviewersCount": 528,
+                "firstPost": {
+                    "id": "76",
+                    "createdAt": "2013-12-03T10:11:40-08:00",
+                    "__typename": "Post"
+                },
+                "postsCount": 50
+            },
+            "topics": {
+                "edges": [
+                    {
+                        "node": {
+                            "id": "2",
+                            "slug": "android",
+                            "name": "Android",
+                            "__typename": "Topic"
+                        },
+                        "__typename": "TopicEdge"
+                    },
+                    {
+                        "node": {
+                            "id": "8",
+                            "slug": "ios",
+                            "name": "iOS",
+                            "__typename": "Topic"
+                        },
+                        "__typename": "TopicEdge"
+                    },
+                    {
+                        "node": {
+                            "id": "19",
+                            "slug": "mac",
+                            "name": "Mac",
+                            "__typename": "Topic"
+                        },
+                        "__typename": "TopicEdge"
+                    }
+                ],
+                "totalCount": 9,
+                "__typename": "TopicConnection"
+            },
+            "secondaryAd": {
+                "id": "12080",
+                "post": {
+                    "id": "144287",
+                    "slug": "flatfile",
+                    "name": "Flatfile",
+                    "updatedAt": "2022-09-22T16:18:08-07:00",
+                    "commentsCount": 110,
+                    "featuredAt": "2019-02-05T01:24:25-08:00",
+                    "createdAt": "2019-02-05T01:24:25-08:00",
+                    "disabledWhenScheduled": true,
+                    "hasVoted": false,
+                    "votesCount": 5918,
+                    "__typename": "Post"
+                },
+                "ctaText": null,
+                "dealText": null,
+                "name": "Flatfile X",
+                "tagline": "The missing API for CSV import - get early access",
+                "thumbnailUuid": "b437cd0b-72ec-4f99-b81d-e7b3c680e952.png",
+                "url": "/r/ad/12080",
+                "__typename": "AdChannel"
+            },
+            "isMaker": false,
+            "isHunter": false,
+            "moderationReason": null,
+            "primaryLink": {
+                "id": "17464",
+                "url": "https://slack.com/",
+                "__typename": "ProductLink"
+            },
+            "commentsCount": 301,
+            "weeklyRank": 1,
+            "showWeeklyRank": true,
+            "user": {
+                "id": "49",
+                "name": "Adam Lieb",
+                "username": "adamslieb",
+                "avatarUrl": "https://ph-avatars.imgix.net/49/original",
+                "headline": "Founder/CEO @ Gamesight",
+                "isViewer": false,
+                "badgesCount": 1,
+                "badgesUniqueCount": 1,
+                "karmaBadge": {
+                    "kind": "GOLD",
+                    "score": 1556,
+                    "__typename": "KarmaBadge"
+                },
+                "__typename": "User"
+            },
+            "makers": [
+                {
+                    "id": "100585",
+                    "name": "Stewart Butterfield",
+                    "username": "stewart",
+                    "avatarUrl": "https://ph-avatars.imgix.net/100585/original",
+                    "headline": "CEO, Slack",
+                    "isViewer": false,
+                    "badgesCount": 15,
+                    "badgesUniqueCount": 2,
+                    "karmaBadge": {
+                        "kind": "GOLD",
+                        "score": 2668,
+                        "__typename": "KarmaBadge"
+                    },
+                    "__typename": "User"
+                }
+            ],
+            "media": [
+                {
+                    "id": "79666",
+                    "originalHeight": 270,
+                    "originalWidth": 480,
+                    "imageUuid": "369c8e5a-94c2-4151-b48f-6ca5aa37a241.jpeg",
+                    "mediaType": "video",
+                    "metadata": {
+                        "url": null,
+                        "videoId": "x6sSa5NpqUI",
+                        "platform": "youtube",
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "29989",
+                    "originalHeight": 600,
+                    "originalWidth": 1024,
+                    "imageUuid": "5db7f69f-e0cd-402c-8fd8-c2e1899c7f19.jpeg",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "29988",
+                    "originalHeight": 317,
+                    "originalWidth": 339,
+                    "imageUuid": "bbd0622e-7442-40bb-93f7-e2368746ad94.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "29987",
+                    "originalHeight": 399,
+                    "originalWidth": 453,
+                    "imageUuid": "8de1063d-0104-40e1-a5b3-4991ef8079a1.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "29986",
+                    "originalHeight": 307,
+                    "originalWidth": 422,
+                    "imageUuid": "32ec895c-d78a-4e74-ac67-19379e79dca2.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                },
+                {
+                    "id": "29985",
+                    "originalHeight": 1217,
+                    "originalWidth": 400,
+                    "imageUuid": "f92278ac-b981-4f21-9b58-4580c0d0d404.png",
+                    "mediaType": "image",
+                    "metadata": {
+                        "url": null,
+                        "videoId": null,
+                        "platform": null,
+                        "__typename": "MediaMetadata"
+                    },
+                    "__typename": "Media"
+                }
+            ],
+            "structuredData": {
+                "@context": "http://schema.org",
+                "@type": "WebApplication",
+                "name": "Slack",
+                "description": "Slack is a collaboration hub for work, no matter what work you do. It’s a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.",
+                "datePublished": "2013-12-03T10:11:40.030-08:00",
+                "dateModified": "2022-09-22T08:31:17.472-07:00",
+                "image": "https://ph-files.imgix.net/a1a7887b-04ad-4d69-b395-f2d58443f836.png?auto=format",
+                "screenshot": [
+                    "https://ph-files.imgix.net/5db7f69f-e0cd-402c-8fd8-c2e1899c7f19.jpeg?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/bbd0622e-7442-40bb-93f7-e2368746ad94.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/8de1063d-0104-40e1-a5b3-4991ef8079a1.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/32ec895c-d78a-4e74-ac67-19379e79dca2.png?auto=format\u0026fit=crop",
+                    "https://ph-files.imgix.net/f92278ac-b981-4f21-9b58-4580c0d0d404.png?auto=format\u0026fit=crop"
+                ],
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingCount": 351,
+                    "ratingValue": "4.4",
+                    "worstRating": 1,
+                    "bestRating": 5
+                },
+                "applicationCategory": "iOS",
+                "author": [
+                    {
+                        "@type": "Person",
+                        "name": "Stewart Butterfield",
+                        "image": "https://ph-avatars.imgix.net/100585/original?auto=format\u0026fit=crop\u0026crop=faces\u0026w=100\u0026h=100",
+                        "url": "https://www.producthunt.com/@stewart"
+                    }
+                ]
+            },
+            "meta": {
+                "canonicalUrl": "https://www.producthunt.com/posts/slack",
+                "creator": "@stewart",
+                "description": "Slack is a collaboration hub for work, no matter what work you do. It’s a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.",
+                "image": "https://ph-files.imgix.net/5db7f69f-e0cd-402c-8fd8-c2e1899c7f19.jpeg?auto=format\u0026fit=crop\u0026frame=1\u0026h=512\u0026w=1024",
+                "mobileAppUrl": "producthunt://post/76",
+                "oembedUrl": "https://www.producthunt.com/posts/slack",
+                "robots": null,
+                "title": "Slack - Be less busy. Real-time messaging, archiving \u0026 search",
+                "type": "product",
+                "author": "Stewart Butterfield",
+                "authorUrl": "https://www.producthunt.com/@stewart",
+                "__typename": "MetaTags"
+            }
+        }
+    }
+}
+]

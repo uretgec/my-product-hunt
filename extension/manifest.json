@@ -2,8 +2,8 @@
     "manifest_version": 3,
     "name": "My Product Hunt",
     "short_name": "My PH",
-    "description": "Some basic personal changes made on Product Hunt website with Dark Mode Theme",
-    "version": "1.0.9",
+    "description": "Adds Dark Mode Theme and no click product info block of Product Hunt website.",
+    "version": "2.0.0",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
         "webNavigation"
@@ -17,10 +17,14 @@
     "offline_enabled": false,
     "content_scripts": [
         {
+            "matches": ["*://www.producthunt.com/*"],
+            "css": ["myStyles.css","assets/darkmode.css"],
+            "run_at": "document_end"
+        },
+        {
           "matches": ["*://www.producthunt.com/*"],
-          "css": ["myStyles.css","assets/darkmode.css"],
           "js": ["lib/producthunt.js","lib/darkmode.js","contentScript.js"],
-          "run_at": "document_idle"
+          "run_at": "document_start"
         }
     ],
     "background": {
