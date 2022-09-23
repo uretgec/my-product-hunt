@@ -1,3 +1,24 @@
+/*dark mode styles*/ 
+.myDarkModeToggle {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    display: flex;
+}
+
+#myDarkModeButton {
+    background: #f64900;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
 /* via: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
 .styles_container__4Ydg1 {
     border: 1px solid #e8e8e8;
@@ -6,6 +27,23 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    color: #667190;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.my_style_bold {
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.my_style_border {
+    border: 1px solid #c0c0c0;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 .styles_rowblock__4Ydg1 {
@@ -13,13 +51,13 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .styles_columnblock__4Ydg1 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;    
+    align-items: stretch;
 }
 
 .styles_rowinlineblock__4Ydg1 {
@@ -34,61 +72,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/*PromotedProducts*/
-.styles_link__3mxUn {
-    background-color: #f8f8f8;
-    border-width: 0 0 0 5px;
-    border-color: #f64900;
-    border-style: solid;
-}
-
-/*Socials*/
-.styles_container__14gv3 {
-    padding: 0;
-    margin-top: 10px;
-}
-@media (max-width: 768px) {
-    .styles_container__14gv3 {
-        padding: 10px;
-        margin-top: 5px;
-    }
-}
-.styles_icon__3ITVt {
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-}
-@media (max-width: 768px) {
-    .styles_icon__3ITVt {
-        margin-right: 20px;
-        width: 24px;
-        height: 24px;
-    }
-}
-.styles_icon__3ITVt path {
-    fill: #6f6f6f;
-    opacity: 0.8;
-}
-.styles_icon__3ITVt:hover path {
-    fill: #30303f;
-}
-
-/*DarkMode*/
-#myDarkModeToggle {
-    border-color: #f64900;
-    background-color: #f64900;
-    padding: 7px 10px 7px 7px;
-    border-radius: 4px;
-    color: #e8e8e8;
-    transition: all .3s ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-}
-
-#myDarkModeToggle:active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f64900;
 }
