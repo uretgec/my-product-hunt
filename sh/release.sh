@@ -34,9 +34,9 @@ fi
 # zip Checker
 if [ -x "$(command -v zip)" ]
 then
-    mkdir -p $WHEREIAM/build/$ENV
+    mkdir -p $WHEREIAM/build/$ENV/$BUILD_NUMBER_NEW
     cd $WHEREIAM/extension
-    zip -r $WHEREIAM/build/$ENV/my-product-hunt-$BUILD_NUMBER_NEW-v$MANIFEST_VERSION.zip * -x "*.DS_Store" -x "__MACOSX" -x "*_original.css"
+    zip -r $WHEREIAM/build/$ENV/$BUILD_NUMBER_NEW/my-product-hunt-$BUILD_NUMBER_NEW-v$MANIFEST_VERSION.zip * -x "*.DS_Store" -x "__MACOSX" -x "*_original.css"
     echo "Extension folder compressed: my-product-hunt-$BUILD_NUMBER_NEW-v$MANIFEST_VERSION.zip"
 
 else
