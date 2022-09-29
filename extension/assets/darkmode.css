@@ -92,6 +92,19 @@ font color: #f5f8ff
   border-bottom: 2px solid #373e4f;
 }
 
+/*discussion - replies*/ 
+.myDarkMode .styles_replyBorder__hy6Op,
+.myDarkMode .styles_replyContainer__JuPAz {
+  border-left: 3px solid #21293c;
+}
+
+.myDarkMode .styles_black__Z9fG_, 
+.myDarkMode a.styles_black__Z9fG_,
+.myDarkMode .styles_grey__YlBrh,
+.myDarkMode a.styles_grey__YlBrh {
+  color: #f5f8ff;
+}
+
 /*home - top featured dropdown*/
 .myDarkMode .styles_selected__HasMu {
   border: none;
@@ -288,4 +301,29 @@ font color: #f5f8ff
 
 .myDarkMode .styles_sidebar___xsnn {
   border-right: 1px solid #21293c;
+}
+
+/*page - user*/
+.myDarkMode .styles_verticalSeparator__KaPbk {
+  background: #21293c;
+}
+
+.myDarkMode .styles_makerHistoryItem__GpWuH,
+.myDarkMode .styles_commentItem__jFX58,
+.myDarkMode .styles_reviewItem__GPrI4 {
+  border-bottom: 1px solid #21293c;
+}
+
+/*user - collections*/
+.myDarkMode .styles_card__ICbeq {
+  color: #d2d4d8;
+  background-color: #21293c;
+  background-image: none;
+  border: 1px solid #373e4f;
+} 
+
+@media (hover: hover) {
+  .myDarkMode .styles_card__ICbeq:hover {
+    background-color: transparent;
+  }
 }
