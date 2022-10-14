@@ -39,7 +39,8 @@ font color: #f5f8ff
 }
 
 /*font color*/
-.myDarkMode .style_color-dark-grey__aN5DV {
+.myDarkMode .style_color-dark-grey__aN5DV,
+.myDarkMode .style_color-darker-grey__qBl48 {
   color: #797e8a;
 }
 
@@ -88,8 +89,8 @@ font color: #f5f8ff
 
 /*product item - discussion*/
 .myDarkMode .styles_container__lJgHe {
-  border-top: 2px solid #373e4f;
-  border-bottom: 2px solid #373e4f;
+  border-top: 1px solid #373e4f;
+  border-bottom: 1px solid #373e4f;
 }
 
 /*discussion - replies*/ 
