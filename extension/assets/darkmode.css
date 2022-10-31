@@ -7,7 +7,8 @@ font color: #f5f8ff
 }
 
 /*header*/
-.myDarkMode .style_bg-white__XxyB1 {
+.myDarkMode .style_bg-white__XxyB1,
+.myDarkMode .bg-white {
   background-color: #1d2436;
   border-bottom: 1px solid #21293c;
 }
@@ -23,13 +24,16 @@ font color: #f5f8ff
 }
 
 /*different bg block*/
-.myDarkMode .style_bg-cloud__Ls5zt {
+.myDarkMode .style_bg-cloud__Ls5zt,
+.myDarkMode .bg-cloud {
   color: #d2d4d8;
   background-color: #21293c;
 }
 
 /*link*/
-.myDarkMode .style_color-light-grey__mkoQQ {
+.myDarkMode .style_color-light-grey__mkoQQ,
+.myDarkMode .color-light-grey, 
+.myDarkMode .color-lighter-grey {
   color: #bcbec4;
 }
 
@@ -40,7 +44,8 @@ font color: #f5f8ff
 
 /*font color*/
 .myDarkMode .style_color-dark-grey__aN5DV,
-.myDarkMode .style_color-darker-grey__qBl48 {
+.myDarkMode .style_color-darker-grey__qBl48,
+.myDarkMode .color-darker-grey {
   color: #797e8a;
 }
 
@@ -134,15 +139,24 @@ font color: #f5f8ff
   }
 }
 
+/*product page: launch discussion */
+.myDarkMode .styles_lockedDiscussion__iCceK:after,
+.myDarkMode .styles_lockedDiscussion__iCceK:before,
+.myDarkMode .styles_actionBar__nsPfS {
+  border-bottom: 1px solid #21293c;
+}
+
 /*hr line*/
-.myDarkMode .style_bg-light-sky__Jv_F2 {
+.myDarkMode .style_bg-light-sky__Jv_F2,
+.myDarkMode .bg-light-sky {
   background-color: #171c2a;
 }
 .myDarkMode .styles_separator__Qydx_,
 .myDarkMode .styles_separator__4z7Kj {
   border-bottom: 1px solid #21293c;
 }
-.myDarkMode .style_sidebarWithSeparator__A6qYC {
+.myDarkMode .style_sidebarWithSeparator__A6qYC,
+.myDarkMode .sidebarWithSeparator {
   border-left: 1px solid #21293c;
 }
 
