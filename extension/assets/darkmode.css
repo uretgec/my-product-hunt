@@ -93,7 +93,8 @@ font color: #f5f8ff
 }
 
 /*product item - discussion*/
-.myDarkMode .styles_container__lJgHe {
+.myDarkMode .styles_container__lJgHe,
+.myDarkMode .styles_container__7mv8X {
   border-top: 1px solid #373e4f;
   border-bottom: 1px solid #373e4f;
 }
@@ -156,7 +157,8 @@ font color: #f5f8ff
   border-bottom: 1px solid #21293c;
 }
 .myDarkMode .style_sidebarWithSeparator__A6qYC,
-.myDarkMode .sidebarWithSeparator {
+.myDarkMode .sidebarWithSeparator,
+.myDarkMode .sidebarWithSeparator.right {
   border-left: 1px solid #21293c;
 }
 
@@ -341,4 +343,13 @@ font color: #f5f8ff
   .myDarkMode .styles_card__ICbeq:hover {
     background-color: transparent;
   }
+}
+
+/*popup - login screen*/
+.myDarkMode .styles_contentBackground__Nnfy4 {
+  background: #373e4f;
+}
+
+.myDarkMode .styles_login__0AT_I {
+  background-color: #21293c;
 }
