@@ -156,10 +156,11 @@ font color: #f5f8ff
 .myDarkMode .styles_separator__4z7Kj {
   border-bottom: 1px solid #21293c;
 }
-.myDarkMode .style_sidebarWithSeparator__A6qYC,
-.myDarkMode .sidebarWithSeparator,
 .myDarkMode .sidebarWithSeparator.right {
   border-left: 1px solid #21293c;
+}
+.myDarkMode .sidebarWithSeparator.left {
+  border-right: 1px solid #21293c;
 }
 
 /*extension container*/
@@ -298,12 +299,18 @@ font color: #f5f8ff
 }
 
 /*page - search*/
-.myDarkMode .styles_hoverGradient__8U229 {
+.myDarkMode .styles_hoverGradient__8U229,
+.myDarkMode .styles_hoverGradient__bnlM3 {
   background-image: none;
   transition: none;
 }
 
-.myDarkMode .styles_hoverGradient__8U229:hover {
+.myDarkMode .styles_periodsBanner__FY106 {
+  background-color: #21293c;
+}
+
+.myDarkMode .styles_hoverGradient__8U229:hover,
+.myDarkMode .styles_hoverGradient__bnlM3:hover {
   background-color: transparent;
 }
 
