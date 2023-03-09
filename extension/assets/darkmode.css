@@ -78,6 +78,7 @@ font color: #f5f8ff
   color: #f5f8ff;
   background: #10141e;
   transition: none;
+  padding: 1px 5px;
 }
 
 /*product item button - feed*/
@@ -122,6 +123,7 @@ font color: #f5f8ff
   color: #f5f8ff;
   background: #10141e;
   transition: none;
+  border: 1px solid #373e4f;
 }
 
 /*topics: product item - promoted*/
@@ -138,6 +140,18 @@ font color: #f5f8ff
       background-color: #10141e;
     }
   }
+}
+
+.myDarkMode div[data-test*="ad-slot-"],
+/*home: collection - discussion etc. block*/
+.myDarkMode .styles_container__JOJsN,
+.myDarkMode .styles_container__oOuC0 {
+  border-top: 2px solid #21293c;
+  border-bottom: 2px solid #21293c;
+}
+
+.myDarkMode .styles_square__6ydb_ {
+  transform: none;
 }
 
 /*product page: launch discussion */
@@ -275,6 +289,7 @@ font color: #f5f8ff
 .myDarkMode .styles_line__6Gr1Y,
 .myDarkMode .styles_line__z39eN {
   background-color: #21293c;
+  border: 1px solid #373e4f;
 }
 
 .myDarkMode .styles_container__0dgmN {
@@ -296,6 +311,20 @@ font color: #f5f8ff
 .myDarkMode .styles_topicButtonList__hAW_f,
 .myDarkMode .styles_topicButtonListItem__9elZC {
   border: 1px solid #21293c;
+}
+
+.myDarkMode .styles_container__uJcC2 {
+  border: 1px solid #21293c;
+  background-color: #21293c;
+}
+
+/*show more line and button*/
+.myDarkMode .styles_line__5vG1f {
+  background: #21293c;
+}
+
+.myDarkMode .color-blue {
+  color: #f5f8ff;
 }
 
 /*page - search*/
@@ -359,4 +388,49 @@ font color: #f5f8ff
 
 .myDarkMode .styles_login__0AT_I {
   background-color: #21293c;
+}
+
+/*popup - search box*/
+.myDarkMode .styles_controlledItem__bQQBY {
+  background-color: #21293c;
+  border-top: 1px solid #373e4f;
+}
+
+.myDarkMode .styles_controlledItem__bQQBY:focus,
+.myDarkMode .styles_controlledItem__bQQBY:hover {
+  background-color: #373e4f;
+  border-top: 1px solid #10141e;
+}
+
+/*homepage: app use block*/
+.myDarkMode .styles_container__AubLC {
+  background: #21293c;
+}
+
+/*page: app use*/
+.myDarkMode .styles_container__aD8EN,
+/*page: hall of fame*/
+.myDarkMode .styles_baseItem__Pg4i4,
+/*page: welcome*/
+.myDarkMode .styles_whiteBox__qzbqk,
+.myDarkMode .styles_card__xF0YN {
+  background-color: #21293c;
+  border: 1px solid #373e4f;
+}
+
+.myDarkMode .styles_container__h9UlK,
+.myDarkMode .styles_container__qhCYd,
+.myDarkMode .styles_positiveTagItem__tC0VD,
+/*page: marketplace*/
+.myDarkMode .styles_pill__4Cvlk,
+.myDarkMode .styles_pill__4Cvlk.styles_white__DSEIH {
+  border: 1px solid #373e4f;
+}
+
+.myDarkMode .styles_borderTop__6njUK {
+  border-top: 1px solid #373e4f;
+}
+
+.myDarkMode .styles_thumbnail__0Qrza {
+  background: #21293c;
 }
