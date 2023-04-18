@@ -327,6 +327,11 @@ font color: #f5f8ff
   color: #f5f8ff;
 }
 
+.myDarkMode button div.color-blue,
+.myDarkMode a div.color-blue {
+  color: #21293c;
+}
+
 /*page - search*/
 .myDarkMode .styles_hoverGradient__8U229,
 .myDarkMode .styles_hoverGradient__bnlM3 {
@@ -354,6 +359,10 @@ font color: #f5f8ff
 
 .myDarkMode .styles_sidebar___xsnn {
   border-right: 1px solid #21293c;
+}
+
+.myDarkMode .styles_sidebar___wHdS {
+  border-left: 1px solid #21293c;
 }
 
 /*page - user*/
@@ -433,4 +442,34 @@ font color: #f5f8ff
 
 .myDarkMode .styles_thumbnail__0Qrza {
   background: #21293c;
+}
+
+/* secondary button */
+.myDarkMode .styles_secondary__aa4sx {
+  border: 1px solid rgb(192, 192, 192);
+  background:rgb(248, 248, 248);
+  color: #10141e;
+}
+
+/* popover */
+.myDarkMode .styles_popover__PmSyH .color-light-grey,
+.myDarkMode .styles_popover__PmSyH .color-lighter-grey {
+  color: #10141e;
+}
+
+/* top menu */
+.myDarkMode .styles_sideMenu__rdw4E {
+  border-left: 1px solid #373e4f;
+}
+
+/*discussion*/
+.myDarkMode .styles_sidebarBox__5hHWf,
+.myDarkMode .styles_item__gBlUG,
+.myDarkMode .styles_container__xUimP {
+  border: 1px solid #373e4f;
+  background: #21293c;
+}
+
+.myDarkMode .styles_hubLink__CRhE5 {
+  border-bottom: 1px solid #373e4f;
 }
