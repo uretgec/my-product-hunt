@@ -18,6 +18,7 @@ Adds Dark Mode Theme and no click product info block of Product Hunt website.
 ### Chrome Store/Firefox Add-Ons
 
 Go to [My Product Hunt](https://chrome.google.com/webstore/detail/jbchipnpikoidnjdgmjdipiandcjhilp) Chrome Store Page
+
 Go to [My Product Hunt](https://addons.mozilla.org/en-US/firefox/addon/my-product-hunt/) Firefox Add-Ons Page
 
 ### Local Development
