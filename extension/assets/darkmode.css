@@ -462,6 +462,10 @@ font color: #f5f8ff
   border-left: 1px solid #373e4f;
 }
 
+.myDarkMode .styles_feeds__eeAft {
+  border-right: 2px solid #373e4f;
+}
+
 /*discussion*/
 .myDarkMode .styles_sidebarBox__5hHWf,
 .myDarkMode .styles_item__gBlUG,
@@ -472,4 +476,9 @@ font color: #f5f8ff
 
 .myDarkMode .styles_hubLink__CRhE5 {
   border-bottom: 1px solid #373e4f;
+}
+
+/*homepage - tour container*/
+.myDarkMode .styles_container__0sZXQ {
+  background: #21293c;
 }
