@@ -3,8 +3,8 @@
 function MyProductHunt() {}
 
 MyProductHunt.prototype.BaseUri = "https://www.producthunt.com"
-MyProductHunt.prototype.ProductPostBlock = ".styles_item__Sn_12" // Home page item list
-MyProductHunt.prototype.ProductSecondPostBlock = ".styles_item__Sn_12" // Topics page item list
+MyProductHunt.prototype.ProductPostBlock = ".styles_item__Dk_nz" // Home page item list
+MyProductHunt.prototype.ProductSecondPostBlock = ".styles_item__Dk_nz" // Topics page item list
 MyProductHunt.prototype.ExtraContentClassName = "styles_container__4Ydg1"
 MyProductHunt.prototype.ImgixSuffixQuery = "?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
 
@@ -139,7 +139,7 @@ MyProductHunt.prototype.createHunterAndMakersBlock = function (product) {
         + '</div>'
         + '<div class="">'
         + '<a href="/@' + product.hunter.username + '" title="' + product.hunter.name + ' - ' + product.hunter.headline.replace('"', "'") + '" target="_blank">'
-        + '<img src="' + product.hunter.avatarUrl + '" alt="" class="styles_image__3iVrP" style="width: 30px; height: 30px;">'
+        + '<img src="' + product.hunter.avatarUrl + '" alt="" class="styles_image__Je5S2" style="width: 30px; height: 30px;">'
         + '</a>' 
         + '</div>'
         + '</div>'
@@ -158,7 +158,7 @@ MyProductHunt.prototype.createHunterAndMakersBlock = function (product) {
                     content +=' style="margin-left:-15px"';
                 }
                 
-                content += '><img src="' + maker.avatarUrl + '" alt="" class="styles_image__3iVrP" style="width: 30px; height: 30px;">'
+                content += '><img src="' + maker.avatarUrl + '" alt="" class="styles_image__Je5S2" style="width: 30px; height: 30px;">'
                 + '</a>'
             }
         }
