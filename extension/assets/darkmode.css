@@ -195,7 +195,8 @@ font color: #f5f8ff
 }
 .myDarkMode .styles_separator__Qydx_,
 .myDarkMode .styles_separator__4z7Kj,
-.myDarkMode .styles_separator__uio4V {
+.myDarkMode .styles_separator__uio4V,
+.myDarkMode .styles_separator__gIohy {
   border-bottom: 1px solid #21293c;
 }
 .myDarkMode .sidebarWithSeparator.right {
@@ -206,7 +207,8 @@ font color: #f5f8ff
 }
 
 /*extension container*/
-.myDarkMode .styles_container__4Ydg1 {
+.myDarkMode .styles_container__4Ydg1,
+.myDarkMode .styles_container__VW_Ad {
   border: 1px solid #373e4f;
   background-color: #21293c;
 }
@@ -373,7 +375,8 @@ font color: #f5f8ff
 
 /*page - search*/
 .myDarkMode .styles_hoverGradient__8U229,
-.myDarkMode .styles_hoverGradient__bnlM3 {
+.myDarkMode .styles_hoverGradient__bnlM3,
+.myDarkMode .styles_hoverGradient__SlCrH {
   background-image: none;
   transition: none;
 }
@@ -383,20 +386,24 @@ font color: #f5f8ff
 }
 
 .myDarkMode .styles_hoverGradient__8U229:hover,
-.myDarkMode .styles_hoverGradient__bnlM3:hover {
+.myDarkMode .styles_hoverGradient__bnlM3:hover,
+.myDarkMode .styles_hoverGradient__SlCrH:hover {
   background-color: transparent;
 }
 
-.myDarkMode .styles_link__BDJXj {
+.myDarkMode .styles_link__BDJXj,
+.myDarkMode .styles_link__wsA_n.styles_active__Kzcp5 {
   background-color: transparent;
   border: 1px solid #21293c;
 }
 
-.myDarkMode .styles_pillLink__URmD_ {
+.myDarkMode .styles_pillLink__URmD_,
+.myDarkMode .styles_pillLink__W2i6F {
   border: 1px solid #21293c;
 }
 
-.myDarkMode .styles_sidebar___xsnn {
+.myDarkMode .styles_sidebar___xsnn,
+.myDarkMode .styles_sidebar__aAxGD {
   border-right: 1px solid #21293c;
 }
 
