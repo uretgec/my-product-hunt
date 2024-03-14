@@ -1032,3 +1032,31 @@ background-color: #21293c
 .myDarkMode .styles_login__7_3Sr {
   background-color: #373e4f;
 }
+
+@media(max-width: 1099px) {
+  .myDarkMode .styles_sidebarWithSeparator__U7aKM {
+      border-top: 1px solid #373e4f;
+  }
+}
+
+.myDarkMode .styles_sidebarWithSeparator__U7aKM.styles_right__N5KnM {
+  border-left: 1px solid #373e4f;
+}
+
+
+.myDarkMode .styles_sidebarWithSeparator__U7aKM.styles_left__fuQte {
+  border-right: 1px solid #373e4f;
+}
+
+.myDarkMode .styles_controlledItem__XBqtn {
+  transition: background-color .2s ease-in-out;
+  background-color: #1d2436;
+}
+
+.myDarkMode .styles_controlledItem__XBqtn:focus,.myDarkMode .styles_controlledItem__XBqtn:hover {
+  background-color: #21293c;
+}
+
+.styles_sidebarBox__kMo67 {
+  border: 1px solid #373e4f;
+}
