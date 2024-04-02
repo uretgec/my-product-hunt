@@ -870,7 +870,6 @@ background-color: #21293c
   color: #005ef6
 }
 
-
 .myDarkMode .styles_commentHighlight__zqWjU {
   background-color: #151b29;
 }
@@ -1057,6 +1056,18 @@ background-color: #21293c
   background-color: #21293c;
 }
 
-.styles_sidebarBox__kMo67 {
+.myDarkMode .styles_sidebarBox__kMo67 {
   border: 1px solid #373e4f;
+}
+
+.myDarkMode .text-dark-grey, .myDarkMode .text-light-grey {
+  color: rgb(157, 163, 180);
+}
+
+.myDarkMode .text-blue {
+  color: #ff6154;
+}
+
+.myDarkMode .styles_backgroundContainer__GYTGM.styles_reverse__Wbetn {
+  background: none;
 }
