@@ -1060,7 +1060,8 @@ background-color: #21293c
   border: 1px solid #373e4f;
 }
 
-.myDarkMode .text-dark-grey, .myDarkMode .text-light-grey {
+.myDarkMode .text-dark-grey, .myDarkMode .text-light-grey,
+.myDarkMode .text-dark-gray, .myDarkMode .text-light-gray {
   color: rgb(157, 163, 180);
 }
 
