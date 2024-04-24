@@ -1061,7 +1061,8 @@ background-color: #21293c
 }
 
 .myDarkMode .text-dark-grey, .myDarkMode .text-light-grey,
-.myDarkMode .text-dark-gray, .myDarkMode .text-light-gray {
+.myDarkMode .text-dark-gray, .myDarkMode .text-light-gray,
+.myDarkMode .styles_container__eS_WB {
   color: rgb(157, 163, 180);
 }
 
