@@ -1073,3 +1073,14 @@ background-color: #21293c
 .myDarkMode .styles_backgroundContainer__GYTGM.styles_reverse__Wbetn {
   background: none;
 }
+
+
+.myDarkMode .border-light-blue,
+.myDarkMode .border-light-gray,
+.myDarkMode .border-light-sky {
+  border-color: #373e4f;
+}
+
+.myDarkMode .border-t-light-blue {
+  border-top-color: #373e4f;
+}
