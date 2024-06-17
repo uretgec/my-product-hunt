@@ -1,13 +1,13 @@
 # My Product Hunt Browser Extension
 
-Adds Dark Mode Theme and no click product info block of Product Hunt website.
+Adds Dark Mode Theme ~~and no click product info block of Product Hunt website~~.
 
 ![screenshot](promo-images/v2/my-ph-dark-mode-no-click2.jpeg)
 
 ## Feature
 
 - (NEW) Product Hunt Dark Mode is ready to use
-- Shows more data of product detail without go to detail pages
+- ~~Shows more data of product detail without go to detail pages~~ (Removes v3.0.0)
 - Add "Dark Mode" toggle button (left bottom corner)
 
 ## Compatibility
