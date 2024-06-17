@@ -69,6 +69,14 @@ MyDarkMode.prototype._process = function () {
 
     // dark mode toggle button process
     this.addDarkModeTemplate(predictMode);
+
+    // remove different hover efect style attr
+    let hoverEffectStyles = document.querySelectorAll(".styles_container__K6Yj1")
+    if (hoverEffectStyles.length > 0) {
+        hoverEffectStyles.forEach((hoverEffectItem) => {
+            hoverEffectItem.removeAttribute("style");
+        });
+    }
 }
 
 MyDarkMode.prototype.handlerDarkMode = function(event) {
