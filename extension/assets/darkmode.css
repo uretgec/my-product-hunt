@@ -29,7 +29,9 @@ Success: #00b37e
 .myDarkMode .border-l-light-blue,
 .myDarkMode .styles_campaignBox__fM8G_,
 .myDarkMode .styles_storyBox__Oyaf9,
-.myDarkMode .styles_offerBox__oPabd {
+.myDarkMode .styles_offerBox__oPabd,
+.myDarkMode .styles_titleTabs__UY0xe,
+.myDarkMode .styles_sidebarWithSeparator__U7aKM.styles_right__N5KnM {
   border-color: #3d4456;
 }
 
@@ -40,6 +42,14 @@ Success: #00b37e
 
 .myDarkMode .styles_separator__R6hoP {
   background-color: #3d4456;
+}
+
+.myDarkMode .styles_calendarButtonBorder__2s4JP {
+  background-color: #f8f8f8;
+}
+
+.myDarkMode .styles_navLink__VYr2T.styles_bold__4FscV {
+  color: #f8f8f8;
 }
 
 .myDarkMode .bg-gray-50, 
