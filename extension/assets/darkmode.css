@@ -31,7 +31,10 @@ Success: #00b37e
 .myDarkMode .styles_storyBox__Oyaf9,
 .myDarkMode .styles_offerBox__oPabd,
 .myDarkMode .styles_titleTabs__UY0xe,
-.myDarkMode .styles_sidebarWithSeparator__U7aKM.styles_right__N5KnM {
+.myDarkMode .styles_sidebarWithSeparator__U7aKM.styles_right__N5KnM,
+.myDarkMode .styles_imageContainer__Bh9wl,
+.myDarkMode .styles_separator__tPalX,
+.myDarkMode .styles_field__QGAeH input {
   border-color: #3d4456;
 }
 
@@ -48,7 +51,9 @@ Success: #00b37e
   background-color: #f8f8f8;
 }
 
-.myDarkMode .styles_navLink__VYr2T.styles_bold__4FscV {
+.myDarkMode .styles_navLink__VYr2T.styles_bold__4FscV,
+.myDarkMode .styles_body__iJHvk,
+.myDarkMode .styles_field__QGAeH input {
   color: #f8f8f8;
 }
 
@@ -61,14 +66,16 @@ Success: #00b37e
 
 .myDarkMode .bg-white, 
 .myDarkMode #root-container,
-.myDarkMode .bg-white\/95 {
+.myDarkMode .bg-white\/95,
+.myDarkMode .styles_verticalSeparator__IMyB1 {
   background-color: #1d2436;
 }
 
 .myDarkMode .text-dark-gray, 
 .myDarkMode .text-gray-700,
 .myDarkMode .\!text-light-gray, 
-.myDarkMode .\!text-dark-gray {
+.myDarkMode .\!text-dark-gray,
+.myDarkMode .text-gray-900 {
   color: #b5b7ba;
 }
 
