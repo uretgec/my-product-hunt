@@ -3,7 +3,7 @@
     "name": "My Product Hunt",
     "short_name": "My PH",
     "description": "Product Hunt Dark Mode Theme",
-    "version": "3.1.3",
+    "version": "3.1.4",
     "homepage_url": "https://github.com/uretgec/my-product-hunt",
     "permissions": [
         "webNavigation"
