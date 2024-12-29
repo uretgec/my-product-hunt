@@ -12,7 +12,10 @@ Success: #00b37e
   border: 0 solid #21293c;
 }
 
-.myDarkMode .text-blue, .myDarkMode .styles_commentBody__OlN8T a {
+.myDarkMode .text-blue, 
+.myDarkMode .styles_commentBody__OlN8T a,
+.myDarkMode .styles_body__iJHvk a,
+.myDarkMode .styles_markdown___zt4z a {
   color: #ff6154;
 }
 
@@ -34,7 +37,9 @@ Success: #00b37e
 .myDarkMode .styles_sidebarWithSeparator__U7aKM.styles_right__N5KnM,
 .myDarkMode .styles_imageContainer__Bh9wl,
 .myDarkMode .styles_separator__tPalX,
-.myDarkMode .styles_field__QGAeH input {
+.myDarkMode .styles_field__QGAeH input,
+.myDarkMode .styles_item__YPX2z,
+.myDarkMode .border-\[\#E1E9F4\] {
   border-color: #3d4456;
 }
 
@@ -47,20 +52,24 @@ Success: #00b37e
   background-color: #3d4456;
 }
 
-.myDarkMode .styles_calendarButtonBorder__2s4JP {
+.myDarkMode .styles_calendarButtonBorder__2s4JP,
+.myDarkMode ul li a {
   background-color: #f8f8f8;
 }
 
 .myDarkMode .styles_navLink__VYr2T.styles_bold__4FscV,
 .myDarkMode .styles_body__iJHvk,
-.myDarkMode .styles_field__QGAeH input {
+.myDarkMode .styles_field__QGAeH input,
+.myDarkMode svg,
+.myDarkMode .styles_markdown___zt4z {
   color: #f8f8f8;
 }
 
 .myDarkMode .bg-gray-50, 
 .myDarkMode .bg-indigo-25,
 .myDarkMode .bg-light-blue,
-.myDarkMode .bg-light-sky {
+.myDarkMode .bg-light-sky,
+.myDarkMode .bg-orangeDark-50 {
   background-color: rgba(0,0,0,.7);
 }
 
