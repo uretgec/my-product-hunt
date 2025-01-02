@@ -8,7 +8,8 @@ Success: #00b37e
 */
 
 .myDarkMode *, .myDarkMode :after, .myDarkMode :before {
-  box-sizing: border-box;
+  box-sizing: content-box; 
+  /* OLD ONE: box-sizing: border-box; */
   border: 0 solid #21293c;
 }
 
@@ -39,7 +40,8 @@ Success: #00b37e
 .myDarkMode .styles_separator__tPalX,
 .myDarkMode .styles_field__QGAeH input,
 .myDarkMode .styles_item__YPX2z,
-.myDarkMode .border-\[\#E1E9F4\] {
+.myDarkMode .border-\[\#E1E9F4\],
+.myDarkMode .border-warning-100 {
   border-color: #3d4456;
 }
 
@@ -52,15 +54,13 @@ Success: #00b37e
   background-color: #3d4456;
 }
 
-.myDarkMode .styles_calendarButtonBorder__2s4JP,
-.myDarkMode ul li a {
+.myDarkMode .styles_calendarButtonBorder__2s4JP {
   background-color: #f8f8f8;
 }
 
 .myDarkMode .styles_navLink__VYr2T.styles_bold__4FscV,
 .myDarkMode .styles_body__iJHvk,
 .myDarkMode .styles_field__QGAeH input,
-.myDarkMode svg,
 .myDarkMode .styles_markdown___zt4z {
   color: #f8f8f8;
 }
@@ -90,6 +90,10 @@ Success: #00b37e
 
 .myDarkMode .fill-dark-gray {
   fill: #b5b7ba;
+}
+
+.myDarkMode svg {
+  fill: #cccccc;
 }
 
 .myDarkMode .hover\:bg-gray-50:hover, 
