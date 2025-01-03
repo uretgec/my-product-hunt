@@ -16,7 +16,8 @@ Success: #00b37e
 .myDarkMode .text-blue, 
 .myDarkMode .styles_commentBody__OlN8T a,
 .myDarkMode .styles_body__iJHvk a,
-.myDarkMode .styles_markdown___zt4z a {
+.myDarkMode .styles_markdown___zt4z a,
+.myDarkMode .styles_body__tRExU a {
   color: #ff6154;
 }
 
@@ -61,7 +62,8 @@ Success: #00b37e
 .myDarkMode .styles_navLink__VYr2T.styles_bold__4FscV,
 .myDarkMode .styles_body__iJHvk,
 .myDarkMode .styles_field__QGAeH input,
-.myDarkMode .styles_markdown___zt4z {
+.myDarkMode .styles_markdown___zt4z,
+.myDarkMode .styles_body__tRExU {
   color: #f8f8f8;
 }
 
