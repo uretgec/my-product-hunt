@@ -77,6 +77,7 @@ Success: #00b37e
 
 .myDarkMode .bg-white, 
 .myDarkMode #root-container,
+.myDarkMode .bg-primary,
 .myDarkMode .bg-white\/95,
 .myDarkMode .styles_verticalSeparator__IMyB1 {
   background-color: #1d2436;
@@ -86,7 +87,9 @@ Success: #00b37e
 .myDarkMode .text-gray-700,
 .myDarkMode .\!text-light-gray, 
 .myDarkMode .\!text-dark-gray,
-.myDarkMode .text-gray-900 {
+.myDarkMode .text-gray-900,
+.myDarkMode .\!text-primary,
+.myDarkMode .text-secondary {
   color: #b5b7ba;
 }
 
@@ -164,4 +167,12 @@ Success: #00b37e
 
 .myDarkMode .border-white {
   border-color: transparent;
+}
+
+.myDarkMode .stroke-gray-900 {
+  stroke: #f8f8f8;
+}
+
+.myDarkMode .hover\:stroke-gray-900:hover {
+  stroke: #cccccc;
 }
