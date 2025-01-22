@@ -79,6 +79,7 @@ Success: #00b37e
 .myDarkMode #root-container,
 .myDarkMode .bg-primary,
 .myDarkMode .bg-white\/95,
+.myDarkMode .\!bg-white,
 .myDarkMode .styles_verticalSeparator__IMyB1 {
   background-color: #1d2436;
 }
